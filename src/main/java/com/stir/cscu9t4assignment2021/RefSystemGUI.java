@@ -1,7 +1,6 @@
 package com.stir.cscu9t4assignment2021;
 
 import com.stir.cscu9t4assignment2021.GuiComponents.*;
-import org.w3c.dom.Text;
 
 import java.awt.*;
 import java.time.LocalDate;
@@ -14,8 +13,10 @@ import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 
+
 //  ***************************************************      ___________________________________________________________
 //  *                                                 *      |                                                         |
+
 /**
  * @author saemundur
  */
@@ -86,6 +87,10 @@ public class RefSystemGUI extends JFrame {
     private JTextField month = new JTextField(3);
     private JTextField year = new JTextField(3);
 
+    BottomPanel btp = new BottomPanel();
+    MenuTopBarPanel mtbp = new MenuTopBarPanel();
+    FunctionalityPanel fnp = new FunctionalityPanel();
+
     //main
     public static void main(String[] args) {
         RefSystemGUI applic = new RefSystemGUI();
@@ -94,6 +99,7 @@ public class RefSystemGUI extends JFrame {
 
     //constructor
     public RefSystemGUI() {
+
         super("Bibliography");
 
         Border blackline = BorderFactory.createLineBorder(Color.black);
@@ -128,35 +134,34 @@ public class RefSystemGUI extends JFrame {
         JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, txtAreaPanel, tableScrollPane); //central panel/output areas
         splitPane.setBackground(Color.LIGHT_GRAY);
         splitPane.setBorder(blackline);
-        splitPane.setDividerLocation(600);
+        splitPane.setDividerLocation(400);
         splitPane.setEnabled(false);
 
-        BottomPanel btp = new BottomPanel();
-        MenuTopBarPanel mtbp = new MenuTopBarPanel();
 
-
-        FunctionalityPanel fnp = new FunctionalityPanel();
         //set bounds
+        typeList.setBounds(5, 20, 200, 20);
         typeList.setRenderer(new DropDown.MyComboBoxRenderer("Type Of Publication", 102, 255, 102));
         typeList.setSelectedIndex(-1);
-        typeList.setBounds(5, 20, 200, 20);
         labTitle.setBounds(5, 80, 150, 20);
         title.setBounds(70, 80, 150, 20);
         labAuthors.setBounds(5, 110, 150, 20);
         authors.setBounds(70, 110, 150, 20);
         editAuthors.setBounds(230, 110, 104, 20);
         labPubYear.setBounds(5, 140, 150, 20);
-        pubYear.setBounds(110,140,110,20);
-        labPublisher.setBounds(5,170,150,20);
-        publisher.setBounds(70,170,150,20);
-        labDOI.setBounds(5,200,150,20);
-        doi.setBounds(70,200,150,20);
-
-
+        pubYear.setBounds(110, 140, 110, 20);
+        labPublisher.setBounds(5, 170, 150, 20);
+        publisher.setBounds(70, 170, 150, 20);
+        labDOI.setBounds(5, 200, 150, 20);
+        doi.setBounds(70, 200, 150, 20);
+        lday.setBounds(5,240,30,20);
+        day.setBounds(30,240,30,20);
+        lmonth.setBounds(65,240,60,20);
+        month.setBounds(105,240,30,20);
+        lyear.setBounds(140,240,30,20);
+        year.setBounds(170,240,50,20);
 
         //edit Authors
         editAuthors.addActionListener(e -> {
-
             JTextField xField = new JTextField(40);
             xField.setBounds(20, 20, 250, 20);
             JTextArea yField = new JTextArea();
@@ -183,7 +188,7 @@ public class RefSystemGUI extends JFrame {
         title.setNextFocusableComponent(authors);
         authors.setNextFocusableComponent(editAuthors);
 
-        // fnp add :
+        // fnp add:
         fnp.add(typeList);
         fnp.add(labTitle);
         fnp.add(title);
@@ -196,44 +201,48 @@ public class RefSystemGUI extends JFrame {
         fnp.add(publisher);
         fnp.add(labDOI);
         fnp.add(doi);
+        fnp.add(lday);
+        fnp.add(day);
+        fnp.add(lmonth);
+        fnp.add(month);
+        fnp.add(lyear);
+        fnp.add(year);
 
         typeList.addActionListener(e -> {
             switch (typeList.getSelectedIndex()) {
                 case 0:
                     addJournalFields();
-                    removeBookFields();
-                    removeConferenceFields();
+                    fnp.removeFields(labConferenceName,labLocation,conference,location);
+                    fnp.removeFields(labBookTitle,labEditor,bookTitle,editor);
                     String message = "Journal is pressed";
                     txtAreaPanel.setText(message);
                     repaint();
                     break;
                 case 1:
-                    removeFields(labJournal, labVolumeIssue, journalName, volumeIssue);
-                    removeBookFields();
-                    labConferenceName.setBounds(5, 200, 150, 20);
-                    conference.setBounds(120, 200, 150, 20);
-                    add(labConferenceName);
+                    fnp.removeFields(labJournal, labVolumeIssue, journalName, volumeIssue);
+                    fnp.removeFields(labBookTitle,labEditor,bookTitle,editor);
+                    labConferenceName.setBounds(5, 300, 115, 20);
+                    conference.setBounds(80, 300, 140, 20);
+                    fnp.add(labConferenceName);
                     labConferenceName.setVisible(true);
-                    add(conference);
-                    labLocation.setBounds(5, 240, 150, 20);
-                    location.setBounds(120, 240, 150, 20);
-                    add(labLocation);
-                    add(location);
-
+                    fnp.add(conference);
+                    labLocation.setBounds(5, 330, 115, 20);
+                    location.setBounds(80, 330, 140, 20);
+                    fnp.add(labLocation);
+                    fnp.add(location);
                     repaint();
                     break;
                 case 2:
-                    removeFields(labJournal, labVolumeIssue, journalName, volumeIssue);
-                    removeConferenceFields();
-                    labBookTitle.setBounds(5, 200, 150, 20);
-                    bookTitle.setBounds(120, 200, 150, 20);
-                    add(labBookTitle);
-                    add(bookTitle);
-                    labEditor.setBounds(5, 240, 150, 20);
-                    editor.setBounds(120, 240, 150, 20);
-                    add(labEditor);
-                    add(editor);
-
+                    fnp.removeFields(labJournal, labVolumeIssue, journalName, volumeIssue);
+                    fnp.removeFields(labConferenceName,labLocation,conference,location);
+                    labBookTitle.setBounds(5, 300, 150, 20);
+                    bookTitle.setBounds(80, 300, 140, 20);
+                    fnp.add(labBookTitle);
+                    fnp.add(bookTitle);
+                    labEditor.setBounds(5, 330, 150, 20);
+                    editor.setBounds(80, 330, 140, 20);
+                    fnp.add(labEditor);
+                    fnp.add(editor);
                     repaint();
                     break;
             }
@@ -260,25 +269,28 @@ public class RefSystemGUI extends JFrame {
         });
 
         btnInsert.setBounds(300, 320, 150, 20);
-//        add(btnInsert);
+        add(btnInsert);
         btnInsert.addActionListener(e -> {
             String message = "";
             message = addCitation("generic");
             outputArea.setText(message);
         });
 
+
         getContentPane().add(BorderLayout.SOUTH, btp);
         getContentPane().add(BorderLayout.NORTH, mtbp);
         getContentPane().add(BorderLayout.CENTER, splitPane);
         getContentPane().add(BorderLayout.WEST, fnp);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(1450, 800));
-        setResizable(true);
-        pack();
+        setResizable(false);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setLocationRelativeTo(null);
         setVisible(true);
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        pack();
+        setSize(screenSize.width, screenSize.height);
 
 
     }
@@ -350,54 +362,17 @@ public class RefSystemGUI extends JFrame {
 
 
     public void addJournalFields() {
-        labJournal.setBounds(5, 200, 150, 20);
-        journalName.setBounds(120, 200, 150, 20);
-        add(labJournal);
-        add(journalName);
+        labJournal.setBounds(5, 300, 150, 20);
+        journalName.setBounds(95, 300, 130, 20);
+        fnp.add(labJournal);
+        fnp.add(journalName);
 
-        labVolumeIssue.setBounds(5, 240, 150, 20);
-        volumeIssue.setBounds(120, 240, 150, 20);
-        add(labVolumeIssue);
-        add(volumeIssue);
+        labVolumeIssue.setBounds(5, 330, 150, 20);
+        volumeIssue.setBounds(95, 330, 130, 20);
+        fnp.add(labVolumeIssue);
+        fnp.add(volumeIssue);
     }
 
-    /**
-     * method to remove the Journal Fields
-     */
-
-    public void removeFields(JLabel lab, JLabel lab2, JTextField text, JTextField text2) {
-
-        remove(lab);
-        remove(lab2);
-
-        remove(text);
-        remove(text2);
-
-    }
-
-    /**
-     * method to remove the Conference Fields
-     */
-    public void removeConferenceFields() {
-
-        remove(labConferenceName);
-        remove(conference);
-
-        remove(labLocation);
-        remove(location);
-
-    }
-
-    /**
-     * method to remove the Book Fields
-     */
-    public void removeBookFields() {
-        remove(labBookTitle);
-        remove(bookTitle);
-
-        remove(labEditor);
-        remove(editor);
-    }
 
     public static boolean validateDate(int d, int m, int y) {
         try {
@@ -412,4 +387,6 @@ public class RefSystemGUI extends JFrame {
 
 }
 
-//  ***************************************************      -----------------------------------------------------------
+/*************************************************** END OF RefSystemGUI **********************************************/
+
+

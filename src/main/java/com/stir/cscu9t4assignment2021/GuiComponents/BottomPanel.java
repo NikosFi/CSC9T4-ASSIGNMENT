@@ -11,7 +11,7 @@ public class BottomPanel extends JPanel {
         Border blackline = BorderFactory.createLineBorder(Color.lightGray);
         setBackground(Color.lightGray);
         setBorder(blackline);
-        setPreferredSize(new Dimension(360, 120));
+        setPreferredSize(new Dimension(360, 90));
         JLabel label = new JLabel("Enter Text");
         JTextField tf = new JTextField(10); // accepts upto 10 characters
         JButton send = new JButton("Send");
