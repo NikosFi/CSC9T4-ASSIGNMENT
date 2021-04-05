@@ -18,7 +18,7 @@ public class Ref {
     private DateTimeFormatter df;
 
 
-    public Ref(String title, String[] authors, String doi, String publisher, int pubyear) {
+    public Ref(String title, String[] authors,int pubyear, String publisher, String doi) {
         this.title = title;
         this.authors = authors;
         this.doi = doi;
@@ -29,7 +29,7 @@ public class Ref {
     //12122012
 
 
-    public Ref(String title, String[] authors, String doi, String publisher, int pubyear, int day, int month, int year) {
+    public Ref(String title, String[] authors,int pubyear, String publisher, String doi, int day, int month, int year) {
         this.title = title;
         this.authors = authors;
         this.doi = doi;

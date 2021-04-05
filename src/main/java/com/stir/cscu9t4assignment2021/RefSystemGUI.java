@@ -3,30 +3,24 @@ package com.stir.cscu9t4assignment2021;
 import com.stir.cscu9t4assignment2021.GuiComponents.*;
 
 import java.awt.*;
+import java.time.DateTimeException;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.time.format.ResolverStyle;
 import java.util.Date;
+import java.util.Locale;
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
-
-
-//  ***************************************************      ___________________________________________________________
-//  *                                                 *      |                                                         |
+import javax.swing.text.DateFormatter;
 
 /**
- * @author saemundur
+ * @author null
  */
 public class RefSystemGUI extends JFrame {
-
-
-//  ***************************************************
-//  *     attribute declaration                       *                                                               |
-//  ***************************************************
-
 
     // Global GUI attributes
     //Labels
@@ -49,17 +43,17 @@ public class RefSystemGUI extends JFrame {
     //Button
     private JButton editAuthors = new JButton("Add Authors");
     private JButton btnInsert = new JButton("Insert");
-    //TextArea
-    private JTextArea outputArea = new JTextArea(20, 50);
     //create Instance to the class that provides the functionality
     private RefCollection bibliography = new RefCollection();
 
     //Journal GUI attributes
     private JLabel labJournal = new JLabel("Journal Name:");
-    private JLabel labVolumeIssue = new JLabel("Volume Issue:");
+    private JLabel labVolume = new JLabel("Volume:");
+    private JLabel labIssue = new JLabel("Issue:");
     //TextFields
     private JTextField journalName = new JTextField(7);
-    private JTextField volumeIssue = new JTextField(7);
+    private JTextField volume = new JTextField(7);
+    private JTextField issue = new JTextField(7);
 
     //Conference GUI attributes
     //Labels
@@ -87,6 +81,7 @@ public class RefSystemGUI extends JFrame {
     private JTextField month = new JTextField(3);
     private JTextField year = new JTextField(3);
 
+
     BottomPanel btp = new BottomPanel();
     MenuTopBarPanel mtbp = new MenuTopBarPanel();
     FunctionalityPanel fnp = new FunctionalityPanel();
@@ -95,7 +90,6 @@ public class RefSystemGUI extends JFrame {
     public static void main(String[] args) {
         RefSystemGUI applic = new RefSystemGUI();
     }
-
 
     //constructor
     public RefSystemGUI() {
@@ -210,8 +204,15 @@ public class RefSystemGUI extends JFrame {
 
         typeList.addActionListener(e -> {
             switch (typeList.getSelectedIndex()) {
+                // TODO set them in a function
                 case 0:
-                    addJournalFields();
+                    labJournal.setBounds(5, 300, 150, 20);
+                    journalName.setBounds(95, 300, 130, 20);
+                    labIssue.setBounds(5, 330, 150, 20);
+                    issue.setBounds(95, 330, 130, 20);
+                    labVolume.setBounds(5, 360, 150, 20);
+                    volume.setBounds(95, 360, 130, 20);
+                    fnp.add(labJournal); fnp.add(journalName); fnp.add(labIssue); fnp.add(issue); fnp.add(labVolume); fnp.add(volume);
                     fnp.removeFields(labConferenceName,labLocation,conference,location);
                     fnp.removeFields(labBookTitle,labEditor,bookTitle,editor);
                     String message = "Journal is pressed";
@@ -219,7 +220,8 @@ public class RefSystemGUI extends JFrame {
                     repaint();
                     break;
                 case 1:
-                    fnp.removeFields(labJournal, labVolumeIssue, journalName, volumeIssue);
+                    fnp.removeFields(labJournal, labIssue, journalName, issue);
+                    fnp.remove(labVolume); fnp.remove(volume);
                     fnp.removeFields(labBookTitle,labEditor,bookTitle,editor);
                     labConferenceName.setBounds(5, 300, 115, 20);
                     conference.setBounds(80, 300, 140, 20);
@@ -233,14 +235,15 @@ public class RefSystemGUI extends JFrame {
                     repaint();
                     break;
                 case 2:
-                    fnp.removeFields(labJournal, labVolumeIssue, journalName, volumeIssue);
+                    fnp.removeFields(labJournal, labIssue, journalName, issue);
+                    fnp.remove(labVolume); fnp.remove(volume);
                     fnp.removeFields(labConferenceName,labLocation,conference,location);
                     labBookTitle.setBounds(5, 300, 150, 20);
                     bookTitle.setBounds(80, 300, 140, 20);
                     fnp.add(labBookTitle);
                     fnp.add(bookTitle);
                     labEditor.setBounds(5, 330, 150, 20);
-                    editor.setBounds(80, 330, 140, 20);
+                    editor.setBounds(85, 330, 135, 20);
                     fnp.add(labEditor);
                     fnp.add(editor);
                     repaint();
@@ -258,22 +261,22 @@ public class RefSystemGUI extends JFrame {
 
             switch (findAll.getSelectedIndex()) {
                 case 0:
-                    outputArea.setText(
+                    txtAreaPanel.setText(
                             bibliography.lookUpByJournal(journalName.getText()));
                     break;
                 case 1:
-                    outputArea.setText(
+                    txtAreaPanel.setText(
                             bibliography.lookUpByPublisher(publisher.getText()));
                     break;
             }
         });
 
-        btnInsert.setBounds(300, 320, 150, 20);
-        add(btnInsert);
+        btnInsert.setBounds(20, 420, 250, 30);
+        fnp.add(btnInsert);
         btnInsert.addActionListener(e -> {
             String message = "";
             message = addCitation("generic");
-            outputArea.setText(message);
+            txtAreaPanel.setText(message);
         });
 
 
@@ -313,10 +316,10 @@ public class RefSystemGUI extends JFrame {
             dayAdded = Integer.parseInt(day.getText());
             monthAdded = Integer.parseInt(month.getText());
             yearAdded = Integer.parseInt(year.getText());
-            if (!validateDate(dayAdded, monthAdded, yearAdded)) {
+            String date = (year.getText() + "-" + month.getText() + "-" + day.getText());
+            if (!validateDate(date)) {
                 throw new IllegalArgumentException();
             }
-
         } catch (NumberFormatException e) {
             Date newDate = new Date();
             if (day.getText().isEmpty() && month.getText().isEmpty() && year.getText().isEmpty()) {
@@ -340,46 +343,37 @@ public class RefSystemGUI extends JFrame {
         switch (typeList.getSelectedIndex()) {
             case 0:
                 String jn = journalName.getText();
-                int vi = Integer.parseInt(volumeIssue.getText());
-                RefJournal refJournal = new RefJournal(t, a, d, p, py, dayAdded, monthAdded, yearAdded, jn, vi, vi);
+                int i = Integer.parseInt(issue.getText());
+                int v = Integer.parseInt(volume.getText());
+                RefJournal refJournal = new RefJournal(t,a,py,p,d, dayAdded, monthAdded, yearAdded, jn, i, v);
                 bibliography.addCite(refJournal); //remember to try with Gens
                 break;
             case 1:
                 String cf = conference.getText();
-                String v = location.getText();
-                RefConference refConference = new RefConference(t, a, d, p, py, cf, v);
+                String l = location.getText();
+                RefConference refConference = new RefConference(t,a,py,p,d, cf, l);
                 bibliography.addCite(refConference);
                 break;
             case 2:
                 String bk = bookTitle.getText();
                 String e = editor.getText();
-                RefBookChapter refBK = new RefBookChapter(t, a, d, p, py, bk, e);
+                RefBookChapter refBK = new RefBookChapter(t,a,py,p,d, bk, e);
                 bibliography.addCite(refBK);
                 break;
         }
         return message;
     }
 
-
-    public void addJournalFields() {
-        labJournal.setBounds(5, 300, 150, 20);
-        journalName.setBounds(95, 300, 130, 20);
-        fnp.add(labJournal);
-        fnp.add(journalName);
-
-        labVolumeIssue.setBounds(5, 330, 150, 20);
-        volumeIssue.setBounds(95, 330, 130, 20);
-        fnp.add(labVolumeIssue);
-        fnp.add(volumeIssue);
-    }
-
-
-    public static boolean validateDate(int d, int m, int y) {
+    public static boolean validateDate(String date) {
         try {
-            LocalDate.parse(d + "/" + m + "/" + y, DateTimeFormatter.ofPattern("d/M/yyyy").
-                    withResolverStyle(ResolverStyle.STRICT));
+            LocalDate.parse(date,
+                    DateTimeFormatter.ofPattern("uuuu-M-d")
+                            .withResolverStyle(ResolverStyle.STRICT)
+            );
+
             return true;
-        } catch (DateTimeParseException e) {
+        } catch (DateTimeException e) {
+            System.out.println(e);
             return false;
         }
     }

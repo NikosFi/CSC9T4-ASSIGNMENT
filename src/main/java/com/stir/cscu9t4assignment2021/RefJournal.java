@@ -12,15 +12,15 @@ public class RefJournal extends Ref {
 
     private Date dateAdded;
 
-    public RefJournal(String title, String[] authors, String doi, String publisher, int pubyear, String journal, int volume, int issue) {
-        super(title, authors, doi, publisher, pubyear);
+    public RefJournal(String title, String[] authors,int pubyear, String publisher, String doi,String journal, int volume, int issue) {
+        super(title, authors,pubyear, publisher, doi);
         this.journal = journal;
         this.volume = volume;
         this.issue = issue;
     }
 
-    public RefJournal(String title, String[] authors, String doi, String publisher, int pubyear, int day, int month, int year, String journal, int volume, int issue) {
-        super(title, authors, doi, publisher, pubyear, day, month, year);
+    public RefJournal(String title, String[] authors,int pubyear, String publisher, String doi,  int day, int month, int year, String journal, int volume, int issue) {
+        super(title, authors,pubyear, publisher, doi, day, month, year);
         this.journal = journal;
         this.volume = volume;
         this.issue = issue;
