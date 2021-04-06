@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class RefCollection {
     private List<Ref> ct;
@@ -22,28 +23,47 @@ public class RefCollection {
     }
 
     public String lookUpByJournal(String journal) {
-        String result = "";
-        for (Ref ref : ct) {
-            if (ref instanceof RefJournal && ((RefJournal) ref).getJournal().equals(journal)) { //if object contains an instance of a child  instance of can find it for you
-                result = (ref.getCitation());
-            } else {
-                result = "-1";
-            }
-        }
-        return result;
+
+        String message = "";
+        String journalLookup = ct.stream()
+                .filter(ref -> ref instanceof RefJournal && ((RefJournal) ref).getJournal().equals(journal))
+                .sorted(Comparator.comparing(refAuthors -> refAuthors.getAuthors()[0]))
+                .map(Ref::getCitation)
+                .collect(Collectors.joining("\n"));
+
+
+        return message = (journalLookup.isEmpty()) ? "There are no Journals with this name." : journalLookup;
     }
 
 
     public String lookUpByVenue(String venue) {
-        return null;
+        String message = "";
+        String venueLookUp = ct.stream()
+                .filter(ref -> ref instanceof RefConference && ((RefConference) ref).getVenue().equals(venue))
+                .sorted(Comparator.comparing(refAuthors -> refAuthors.getAuthors()[0]))
+                .map(Ref::getCitation)
+                .collect(Collectors.joining("\n"));
+
+
+        return message = (venueLookUp.isEmpty()) ? "There are no Conferences with this name." : venueLookUp;
     }
+
 
     public String lookUpByPublisher(String publisher) {
-        return null;
+        String message = "";
+        String publisherLookUp = ct.stream()
+                .filter(ref ->  ref.getPublisher().equals(publisher))
+                .sorted(Comparator.comparing(refAuthors -> refAuthors.getAuthors()[0]))
+                .map(Ref::getCitation)
+                .collect(Collectors.joining("\n"));
+
+
+        return message = (publisherLookUp.isEmpty()) ? "There are no Publishers with this name." : publisherLookUp;
     }
 
+
     public int getNumberOfRefs(String type) {
-        return 0;
+        return ct.size();
     }
 
     public String exportAll() {
@@ -60,4 +80,5 @@ public class RefCollection {
         }
         return line;
     }
+
 }

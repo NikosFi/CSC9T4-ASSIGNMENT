@@ -12,13 +12,5 @@ public class BottomPanel extends JPanel {
         setBackground(Color.lightGray);
         setBorder(blackline);
         setPreferredSize(new Dimension(360, 90));
-        JLabel label = new JLabel("Enter Text");
-        JTextField tf = new JTextField(10); // accepts upto 10 characters
-        JButton send = new JButton("Send");
-        JButton reset = new JButton("Reset");
-        add(label); // Components Added using Flow Layout
-        add(tf);
-        add(send);
-        add(reset);
     }
 }

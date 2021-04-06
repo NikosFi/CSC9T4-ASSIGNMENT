@@ -3,24 +3,23 @@ package com.stir.cscu9t4assignment2021;
 import com.stir.cscu9t4assignment2021.GuiComponents.*;
 
 import java.awt.*;
+import java.awt.event.*;
+import java.text.SimpleDateFormat;
 import java.time.DateTimeException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
 import java.time.format.ResolverStyle;
 import java.util.Date;
-import java.util.Locale;
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.text.DateFormatter;
+
 
 /**
  * @author null
  */
-public class RefSystemGUI extends JFrame {
+public class RefSystemGUI extends JFrame implements ActionListener {
 
     // Global GUI attributes
     //Labels
@@ -30,11 +29,14 @@ public class RefSystemGUI extends JFrame {
     private JLabel labPublisher = new JLabel("Publisher");
     private JLabel labDOI = new JLabel("DOI");
     //TextFields
-    private JTextField title = new JTextField(35);
-    private JTextField authors = new JTextField(25);
-    private JTextField pubYear = new JTextField(25);
-    private JTextField publisher = new JTextField(12);
-    private JTextField doi = new JTextField(10);
+    private JTextField title = new JTextField(60);
+    private JTextField authors = new JTextField(60);
+    private JTextField pubYear = new JTextField(60);
+    private JTextField publisher = new JTextField(60);
+    private JTextField doi = new JTextField(60);
+    //Text Area
+    JScrollPane outputScrollPane = new JScrollPane();
+    JTextArea output = new JTextArea(20, 98);
     //ComboBoxes
     private final String publicationType[] = new String[]{"Journal", "Conference Paper", "Book Chapters"};
     private JComboBox<String> typeList = new JComboBox<>(publicationType);
@@ -51,25 +53,25 @@ public class RefSystemGUI extends JFrame {
     private JLabel labVolume = new JLabel("Volume:");
     private JLabel labIssue = new JLabel("Issue:");
     //TextFields
-    private JTextField journalName = new JTextField(7);
-    private JTextField volume = new JTextField(7);
-    private JTextField issue = new JTextField(7);
+    private JTextField journalName = new JTextField(60);
+    private JTextField volume = new JTextField(60);
+    private JTextField issue = new JTextField(60);
 
     //Conference GUI attributes
     //Labels
     private JLabel labConferenceName = new JLabel("Conference:");
     private JLabel labLocation = new JLabel("Location:");
     //TextFields
-    private JTextField conference = new JTextField(7);
-    private JTextField location = new JTextField(7);
+    private JTextField conference = new JTextField(60);
+    private JTextField location = new JTextField(60);
 
     //Book GUI attributes
     //Labels
     private JLabel labBookTitle = new JLabel("Book title:");
     private JLabel labEditor = new JLabel("Editor Name:");
     //TextFields
-    private JTextField bookTitle = new JTextField(7);
-    private JTextField editor = new JTextField(7);
+    private JTextField bookTitle = new JTextField(60);
+    private JTextField editor = new JTextField(60);
 
     // Date GUI attributes
     //Labels
@@ -78,9 +80,13 @@ public class RefSystemGUI extends JFrame {
     private JLabel lyear = new JLabel("Year");
     //TextFields
     private JTextField day = new JTextField();
-    private JTextField month = new JTextField(3);
-    private JTextField year = new JTextField(3);
-
+    private JTextField month = new JTextField(60);
+    private JTextField year = new JTextField(60);
+    // findAll search field && labels
+    JLabel lselectType = new JLabel("Select Type");
+    JLabel lquery = new JLabel("Search for:");
+    JTextField searchField = new JTextField(20);
+    JButton submitSearchBtn = new JButton("Search");
 
     BottomPanel btp = new BottomPanel();
     MenuTopBarPanel mtbp = new MenuTopBarPanel();
@@ -98,6 +104,11 @@ public class RefSystemGUI extends JFrame {
 
         Border blackline = BorderFactory.createLineBorder(Color.black);
         TextAreaPanel txtAreaPanel = new TextAreaPanel();
+
+        output.setEditable(false);
+        output.setLineWrap(true);
+        txtAreaPanel.add(output);
+
         // dbTable second half of central panel
         JTable dbTable = new JTable();
         dbTable.setSize(new Dimension(500, 500));
@@ -147,12 +158,12 @@ public class RefSystemGUI extends JFrame {
         publisher.setBounds(70, 170, 150, 20);
         labDOI.setBounds(5, 200, 150, 20);
         doi.setBounds(70, 200, 150, 20);
-        lday.setBounds(5,240,30,20);
-        day.setBounds(30,240,30,20);
-        lmonth.setBounds(65,240,60,20);
-        month.setBounds(105,240,30,20);
-        lyear.setBounds(140,240,30,20);
-        year.setBounds(170,240,50,20);
+        lday.setBounds(5, 240, 30, 20);
+        day.setBounds(30, 240, 30, 20);
+        lmonth.setBounds(65, 240, 60, 20);
+        month.setBounds(105, 240, 30, 20);
+        lyear.setBounds(140, 240, 30, 20);
+        year.setBounds(170, 240, 50, 20);
 
         //edit Authors
         editAuthors.addActionListener(e -> {
@@ -202,6 +213,7 @@ public class RefSystemGUI extends JFrame {
         fnp.add(lyear);
         fnp.add(year);
 
+
         typeList.addActionListener(e -> {
             switch (typeList.getSelectedIndex()) {
                 // TODO set them in a function
@@ -212,17 +224,23 @@ public class RefSystemGUI extends JFrame {
                     issue.setBounds(95, 330, 130, 20);
                     labVolume.setBounds(5, 360, 150, 20);
                     volume.setBounds(95, 360, 130, 20);
-                    fnp.add(labJournal); fnp.add(journalName); fnp.add(labIssue); fnp.add(issue); fnp.add(labVolume); fnp.add(volume);
-                    fnp.removeFields(labConferenceName,labLocation,conference,location);
-                    fnp.removeFields(labBookTitle,labEditor,bookTitle,editor);
+                    fnp.add(labJournal);
+                    fnp.add(journalName);
+                    fnp.add(labIssue);
+                    fnp.add(issue);
+                    fnp.add(labVolume);
+                    fnp.add(volume);
+                    fnp.removeFields(labConferenceName, labLocation, conference, location);
+                    fnp.removeFields(labBookTitle, labEditor, bookTitle, editor);
                     String message = "Journal is pressed";
-                    txtAreaPanel.setText(message);
+                    output.setText(message);
                     repaint();
                     break;
                 case 1:
                     fnp.removeFields(labJournal, labIssue, journalName, issue);
-                    fnp.remove(labVolume); fnp.remove(volume);
-                    fnp.removeFields(labBookTitle,labEditor,bookTitle,editor);
+                    fnp.remove(labVolume);
+                    fnp.remove(volume);
+                    fnp.removeFields(labBookTitle, labEditor, bookTitle, editor);
                     labConferenceName.setBounds(5, 300, 115, 20);
                     conference.setBounds(80, 300, 140, 20);
                     fnp.add(labConferenceName);
@@ -236,8 +254,9 @@ public class RefSystemGUI extends JFrame {
                     break;
                 case 2:
                     fnp.removeFields(labJournal, labIssue, journalName, issue);
-                    fnp.remove(labVolume); fnp.remove(volume);
-                    fnp.removeFields(labConferenceName,labLocation,conference,location);
+                    fnp.remove(labVolume);
+                    fnp.remove(volume);
+                    fnp.removeFields(labConferenceName, labLocation, conference, location);
                     labBookTitle.setBounds(5, 300, 150, 20);
                     bookTitle.setBounds(80, 300, 140, 20);
                     fnp.add(labBookTitle);
@@ -253,30 +272,75 @@ public class RefSystemGUI extends JFrame {
 
 
         findAll.setRenderer(new DropDown.MyComboBoxRenderer("Find All By", 255, 102, 102));
+        findAll.setPreferredSize(new Dimension(200, 30));
         findAll.setSelectedIndex(-1);
-        findAll.setBounds(500, 320, 150, 20);
-//        add(findAll);
-        repaint();
-        findAll.addActionListener(e -> {
+        searchField.setPreferredSize(new Dimension(200, 30));
+        searchField.setEditable(false);
+        btp.add(lselectType);
+        btp.add(findAll);
+        btp.add(lquery);
+        btp.add(searchField);
+        btp.add(submitSearchBtn);
 
+        findAll.addActionListener(e -> {
             switch (findAll.getSelectedIndex()) {
                 case 0:
-                    txtAreaPanel.setText(
-                            bibliography.lookUpByJournal(journalName.getText()));
+                    searchField.setText("Search for Journal...");
+                    searchField.setForeground(Color.lightGray);
+                    searchField.setEditable(true);
                     break;
                 case 1:
-                    txtAreaPanel.setText(
-                            bibliography.lookUpByPublisher(publisher.getText()));
+                    searchField.setText("Search for Conference Venue...");
+                    searchField.setForeground(Color.lightGray);
+                    searchField.setEditable(true);
+                    break;
+                case 2:
+                    searchField.setText("Search for Publisher...");
+                    searchField.setForeground(Color.lightGray);
+                    searchField.setEditable(true);
                     break;
             }
         });
+        searchField.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                searchField.setText("");
+                searchField.setForeground(Color.black);
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+
+            }
+        });
+        submitSearchBtn.addActionListener(e -> {
+            switch (findAll.getSelectedIndex()) {
+                case 0:
+                    output.setText(bibliography.lookUpByJournal(searchField.getText()));
+                    findAll.setSelectedIndex(-1);
+                    searchField.setText("");
+                    searchField.setEditable(false);
+                    break;
+                case 1:
+                    output.setText(bibliography.lookUpByVenue(searchField.getText()));
+                    searchField.setText("");
+                    searchField.setEditable(false);
+                    break;
+                case 2:
+                    output.setText(bibliography.lookUpByPublisher(searchField.getText()));
+                    searchField.setText("");
+                    searchField.setEditable(false);
+                    break;
+            }
+        });
+
 
         btnInsert.setBounds(20, 420, 250, 30);
         fnp.add(btnInsert);
         btnInsert.addActionListener(e -> {
             String message = "";
             message = addCitation("generic");
-            txtAreaPanel.setText(message);
+            output.setText(message);
         });
 
 
@@ -298,6 +362,15 @@ public class RefSystemGUI extends JFrame {
 
     }
 
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == submitSearchBtn && findAll.getSelectedIndex() == 0) {
+            output.setText(bibliography.lookUpByJournal(searchField.getText()));
+        }
+        if (e.getSource() == submitSearchBtn && findAll.getSelectedIndex() == 1) {
+            output.setText(bibliography.lookUpByVenue(searchField.getText()));
+        }
+    }
+
     public String addCitation(String what) {
         String message = "Citation added\n";
         System.out.println("Adding " + what + " citation to the Bibliography");
@@ -312,6 +385,8 @@ public class RefSystemGUI extends JFrame {
         int dayAdded = 0;
         int monthAdded = 0;
         int yearAdded = 0;
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        String newDate = sdf.format(new Date());
         try {
             dayAdded = Integer.parseInt(day.getText());
             monthAdded = Integer.parseInt(month.getText());
@@ -321,20 +396,21 @@ public class RefSystemGUI extends JFrame {
                 throw new IllegalArgumentException();
             }
         } catch (NumberFormatException e) {
-            Date newDate = new Date();
             if (day.getText().isEmpty() && month.getText().isEmpty() && year.getText().isEmpty()) {
-                System.out.println("Date has been formatted automatically to : " + newDate.toString());
+                System.out.println("Date has been formatted automatically to : " + newDate);
                 dayAdded = 0;
                 monthAdded = 0;
                 yearAdded = 0;
+                message = "Date has been formatted automatically to : " + newDate + "\n"
+                        + "Citation added successfully";
             } else {
-                System.out.println("Your date is invalid");
-                return message = "Your date should contain only valid date characters , range from 1970 to " + (newDate.getYear() + 1900) + " and the input fields should not be empty";
-//                throw new IllegalArgumentException();
+                System.out.println("Interrupt invalid date");
+                return message = "The date should contain only valid date characters (e.g " + newDate + " )";
             }
         } catch (IllegalArgumentException e) {
-            System.out.println("Invalid Date");
-            return message = "Your date input contains incorrect values for a date ";
+            System.out.println("Your date is invalid");
+            return message = "The date that you inserted is incorrect. \n" +
+                    "Please check the date fields and try again.";
         }
 
 
@@ -345,19 +421,19 @@ public class RefSystemGUI extends JFrame {
                 String jn = journalName.getText();
                 int i = Integer.parseInt(issue.getText());
                 int v = Integer.parseInt(volume.getText());
-                RefJournal refJournal = new RefJournal(t,a,py,p,d, dayAdded, monthAdded, yearAdded, jn, i, v);
+                RefJournal refJournal = new RefJournal(t, a, py, p, d, dayAdded, monthAdded, yearAdded, jn, i, v);
                 bibliography.addCite(refJournal); //remember to try with Gens
                 break;
             case 1:
                 String cf = conference.getText();
                 String l = location.getText();
-                RefConference refConference = new RefConference(t,a,py,p,d, cf, l);
+                RefConference refConference = new RefConference(t, a, py, p, d, dayAdded, monthAdded, yearAdded, cf, l);
                 bibliography.addCite(refConference);
                 break;
             case 2:
                 String bk = bookTitle.getText();
                 String e = editor.getText();
-                RefBookChapter refBK = new RefBookChapter(t,a,py,p,d, bk, e);
+                RefBookChapter refBK = new RefBookChapter(t, a, py, p, d, dayAdded, monthAdded, yearAdded, bk, e);
                 bibliography.addCite(refBK);
                 break;
         }
@@ -370,7 +446,6 @@ public class RefSystemGUI extends JFrame {
                     DateTimeFormatter.ofPattern("uuuu-M-d")
                             .withResolverStyle(ResolverStyle.STRICT)
             );
-
             return true;
         } catch (DateTimeException e) {
             System.out.println(e);

@@ -28,19 +28,25 @@ public class RefJournal extends Ref {
        this.dateAdded = (new Date(year-1900,month-1,day));
 
 
-
-
-    }
-
-    @Override
-    public String getCitation() {
-        String result = getTitle() + " " + getDoi() + " "  + getPublisher()  +  " " +
-                Arrays.toString(getAuthors()) + " " + getPubyear() + " " + getDateAdded();
-        return result;
     }
 
     public String getJournal(){
         return journal;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public int getIssue() {
+        return issue;
+    }
+
+    @Override
+    public String getCitation() {
+        String result =  Arrays.toString(getAuthors()) + ", (" + getPubyear() + "). "  + getTitle()  +  ". " +
+                getJournal() + ", " + getVolume() + "(" + getIssue() + "), " + getDateAdded();
+        return result;
     }
 
 

@@ -8,9 +8,6 @@ public class FunctionalityPanel extends JPanel {
 
     public FunctionalityPanel() {
 
-//        BoxLayout boxLayout = new BoxLayout(this, BoxLayout.Y_AXIS);
-//        setBorder(new EmptyBorder(new Insets(100,150,100,150)));
-//        JButton btn1 = new JButton("test");
         setLayout(null);
         setBackground(Color.LIGHT_GRAY);
         Border blackline = BorderFactory.createLineBorder(Color.black);

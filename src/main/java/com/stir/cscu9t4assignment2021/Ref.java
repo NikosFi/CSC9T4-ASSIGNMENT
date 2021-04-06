@@ -8,6 +8,7 @@ import java.util.Date;
 
 public class Ref {
 
+
     private String title;
     private String[] authors;
     private String doi;
