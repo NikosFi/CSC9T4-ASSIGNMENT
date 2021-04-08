@@ -47,6 +47,9 @@ public class Ref {
 
     }
 
+    public Ref(String... args){ // ---->
+    };
+
     public String getDoi() {
         return doi;
     }

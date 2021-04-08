@@ -4,11 +4,14 @@ import com.stir.cscu9t4assignment2021.GuiComponents.*;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.ResolverStyle;
+import java.util.ArrayList;
 import java.util.Date;
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -19,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 /**
  * @author null
  */
-public class RefSystemGUI extends JFrame implements ActionListener {
+public class RefSystemGUI extends JFrame {
 
     // Global GUI attributes
     //Labels
@@ -35,8 +38,8 @@ public class RefSystemGUI extends JFrame implements ActionListener {
     private JTextField publisher = new JTextField(60);
     private JTextField doi = new JTextField(60);
     //Text Area
-    JScrollPane outputScrollPane = new JScrollPane();
-    JTextArea output = new JTextArea(20, 98);
+//    JScrollPane outputScrollPane = new JScrollPane();
+//    JTextArea output = new JTextArea(20, 98);
     //ComboBoxes
     private final String publicationType[] = new String[]{"Journal", "Conference Paper", "Book Chapters"};
     private JComboBox<String> typeList = new JComboBox<>(publicationType);
@@ -87,6 +90,15 @@ public class RefSystemGUI extends JFrame implements ActionListener {
     JLabel lquery = new JLabel("Search for:");
     JTextField searchField = new JTextField(20);
     JButton submitSearchBtn = new JButton("Search");
+    //JMenuItemWithEventInitialization
+    JMenu file;
+    JMenu tools;
+    JMenu export_to;
+    JMenuItem Open;
+    JMenuItem Save;
+    JMenuItem importCsv ;
+    JMenuItem exportXml;
+    JMenuItem exportText;
 
     BottomPanel btp = new BottomPanel();
     MenuTopBarPanel mtbp = new MenuTopBarPanel();
@@ -105,9 +117,6 @@ public class RefSystemGUI extends JFrame implements ActionListener {
         Border blackline = BorderFactory.createLineBorder(Color.black);
         TextAreaPanel txtAreaPanel = new TextAreaPanel();
 
-        output.setEditable(false);
-        output.setLineWrap(true);
-        txtAreaPanel.add(output);
 
         // dbTable second half of central panel
         JTable dbTable = new JTable();
@@ -233,7 +242,7 @@ public class RefSystemGUI extends JFrame implements ActionListener {
                     fnp.removeFields(labConferenceName, labLocation, conference, location);
                     fnp.removeFields(labBookTitle, labEditor, bookTitle, editor);
                     String message = "Journal is pressed";
-                    output.setText(message);
+                    txtAreaPanel.setText(message);
                     repaint();
                     break;
                 case 1:
@@ -316,18 +325,18 @@ public class RefSystemGUI extends JFrame implements ActionListener {
         submitSearchBtn.addActionListener(e -> {
             switch (findAll.getSelectedIndex()) {
                 case 0:
-                    output.setText(bibliography.lookUpByJournal(searchField.getText()));
+                    txtAreaPanel.setText(bibliography.lookUpByJournal(searchField.getText()));
                     findAll.setSelectedIndex(-1);
                     searchField.setText("");
                     searchField.setEditable(false);
                     break;
                 case 1:
-                    output.setText(bibliography.lookUpByVenue(searchField.getText()));
+                    txtAreaPanel.setText(bibliography.lookUpByVenue(searchField.getText()));
                     searchField.setText("");
                     searchField.setEditable(false);
                     break;
                 case 2:
-                    output.setText(bibliography.lookUpByPublisher(searchField.getText()));
+                    txtAreaPanel.setText(bibliography.lookUpByPublisher(searchField.getText()));
                     searchField.setText("");
                     searchField.setEditable(false);
                     break;
@@ -340,7 +349,36 @@ public class RefSystemGUI extends JFrame implements ActionListener {
         btnInsert.addActionListener(e -> {
             String message = "";
             message = addCitation("generic");
-            output.setText(message);
+            txtAreaPanel.setText(message);
+        });
+
+
+        tools = new JMenu("Tools");
+        file =new JMenu("File");
+        importCsv = new JMenuItem("Import Csv");
+        export_to = new JMenu("Export To");
+        exportXml = new JMenuItem("Export To .xml");
+        exportText = new JMenuItem("Export To .txt");
+
+        mtbp.add(file);
+        mtbp.add(tools);
+        tools.add(importCsv);
+        tools.add(export_to);
+        export_to.add(exportXml);
+        export_to.add(exportText);
+
+        importCsv.addActionListener(e -> {
+
+            FileDialog fd = new FileDialog(new JFrame());
+            fd.setVisible(true);
+            File[] f = fd.getFiles();
+            if (f.length > 0) {
+                try {
+                    txtAreaPanel.setText(bibliography.importMany(((fd.getFiles()[0].getAbsolutePath()))));
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
         });
 
 
@@ -362,17 +400,15 @@ public class RefSystemGUI extends JFrame implements ActionListener {
 
     }
 
-    public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == submitSearchBtn && findAll.getSelectedIndex() == 0) {
-            output.setText(bibliography.lookUpByJournal(searchField.getText()));
-        }
-        if (e.getSource() == submitSearchBtn && findAll.getSelectedIndex() == 1) {
-            output.setText(bibliography.lookUpByVenue(searchField.getText()));
-        }
-    }
 
     public String addCitation(String what) {
         String message = "Citation added\n";
+//        try {
+//            bibliography.importMany("all_data_corrected.csv");
+//        }
+//        catch (IOException e){
+//            message = "MUTI";
+//        }
         System.out.println("Adding " + what + " citation to the Bibliography");
 
         // global attribute declaration
@@ -392,7 +428,7 @@ public class RefSystemGUI extends JFrame implements ActionListener {
             monthAdded = Integer.parseInt(month.getText());
             yearAdded = Integer.parseInt(year.getText());
             String date = (year.getText() + "-" + month.getText() + "-" + day.getText());
-            if (!validateDate(date)) {
+            if (!bibliography.validateDate(date)) {
                 throw new IllegalArgumentException();
             }
         } catch (NumberFormatException e) {
@@ -422,7 +458,7 @@ public class RefSystemGUI extends JFrame implements ActionListener {
                 int i = Integer.parseInt(issue.getText());
                 int v = Integer.parseInt(volume.getText());
                 RefJournal refJournal = new RefJournal(t, a, py, p, d, dayAdded, monthAdded, yearAdded, jn, i, v);
-                bibliography.addCite(refJournal); //remember to try with Gens
+                bibliography.addCite(refJournal); //after beta implement with generics
                 break;
             case 1:
                 String cf = conference.getText();
@@ -440,18 +476,18 @@ public class RefSystemGUI extends JFrame implements ActionListener {
         return message;
     }
 
-    public static boolean validateDate(String date) {
-        try {
-            LocalDate.parse(date,
-                    DateTimeFormatter.ofPattern("uuuu-M-d")
-                            .withResolverStyle(ResolverStyle.STRICT)
-            );
-            return true;
-        } catch (DateTimeException e) {
-            System.out.println(e);
-            return false;
-        }
-    }
+//    public boolean validateDate(String date) {
+//        try {
+//            LocalDate.parse(date,
+//                    DateTimeFormatter.ofPattern("uuuu-M-d")
+//                            .withResolverStyle(ResolverStyle.STRICT)
+//            );
+//            return true;
+//        } catch (DateTimeException e) {
+//            System.out.println(e);
+//            return false;
+//        }
+//    }
 
 
 }

@@ -45,7 +45,7 @@ public class RefJournal extends Ref {
     @Override
     public String getCitation() {
         String result =  Arrays.toString(getAuthors()) + ", (" + getPubyear() + "). "  + getTitle()  +  ". " +
-                getJournal() + ", " + getVolume() + "(" + getIssue() + "), " + getDateAdded();
+                getJournal() + ", " + getVolume() + "(" + getIssue() + "), " + getPublisher() + ". "+ getDateAdded();
         return result;
     }
 
