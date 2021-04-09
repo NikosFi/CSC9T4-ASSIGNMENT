@@ -3,6 +3,8 @@ package com.stir.cscu9t4assignment2021;
 import com.stir.cscu9t4assignment2021.GuiComponents.TextAreaPanel;
 import com.sun.jdi.IntegerType;
 
+import javax.swing.*;
+import java.awt.*;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -13,8 +15,10 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.ResolverStyle;
 import java.util.*;
+import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.logging.XMLFormatter;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -81,7 +85,30 @@ public class RefCollection {
     }
 
     public String exportAll() {
-        return null;
+       return null ;
+    }
+
+    public String exportXML() {
+        XmlWriter xmlWriter = new XmlWriter();
+
+        xmlWriter.writeXmlFile(ct);
+
+        return "hola";
+    }
+
+    public String exportToText(String source) {
+
+
+        File newExportedText = new File("exportedToText.txt");
+        try {
+            FileWriter fw = new FileWriter(newExportedText,false);
+            fw.write(source);
+            fw.close();
+        }
+        catch (IOException ioe) {
+            System.out.println("");
+        }
+        return "Your file has been created \n Good luck finding it";
     }
 
     public String importMany(String filePath) throws IOException {

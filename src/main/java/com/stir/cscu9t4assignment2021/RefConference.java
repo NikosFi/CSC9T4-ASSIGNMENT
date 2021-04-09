@@ -29,10 +29,14 @@ public class RefConference extends Ref {
         return venue;
     }
 
+    public String getLocation() {
+        return location;
+    }
+
     @Override
     public String getCitation() {
-        String result = getTitle() + " " + getDoi() + " "  + getPublisher()  +  " " +
-                Arrays.toString(getAuthors()) + " " + getPubyear() + " " + getDateAdded() + " " + getVenue();
+        String result =Arrays.toString(getAuthors()) + ", (" + getPubyear() + "). "  + getTitle()  +  ". " +
+                 "), " + getPublisher() + ". "+ getDateAdded();
         return result;
     }
 }

@@ -2,21 +2,18 @@ package com.stir.cscu9t4assignment2021;
 
 import com.stir.cscu9t4assignment2021.GuiComponents.*;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.time.DateTimeException;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.format.ResolverStyle;
-import java.util.ArrayList;
-import java.util.Date;
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
+import java.awt.*;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 
 
 /**
@@ -47,7 +44,8 @@ public class RefSystemGUI extends JFrame {
     private JComboBox findAll = new JComboBox(findAllList);
     //Button
     private JButton editAuthors = new JButton("Add Authors");
-    private JButton btnInsert = new JButton("Insert");
+    ArrayList<String> authHolderArray = new ArrayList<>();
+    private JButton btnInsert = new JButton("Add");
     //create Instance to the class that provides the functionality
     private RefCollection bibliography = new RefCollection();
 
@@ -99,6 +97,7 @@ public class RefSystemGUI extends JFrame {
     JMenuItem importCsv ;
     JMenuItem exportXml;
     JMenuItem exportText;
+
 
     BottomPanel btp = new BottomPanel();
     MenuTopBarPanel mtbp = new MenuTopBarPanel();
@@ -176,24 +175,38 @@ public class RefSystemGUI extends JFrame {
 
         //edit Authors
         editAuthors.addActionListener(e -> {
-            JTextField xField = new JTextField(40);
-            xField.setBounds(20, 20, 250, 20);
-            JTextArea yField = new JTextArea();
-            yField.setBounds(5, 50, 360, 300);
+            JTextField textField = new JTextField(40);
+            textField.setBounds(20, 20, 250, 20);
+            JTextArea textArea = new JTextArea(40,10);
+            textArea.setBounds(5, 50, 360, 300);
 
-            JLabel xlab = new JLabel("Add authors");
-            xlab.setBounds(100, 5, 150, 15);
+
+
+            JButton xbtn = new JButton("Add");
+            xbtn.setBounds(270, 20, 100, 20);
+            xbtn.addActionListener(event -> {
+                if(!textField.getText().isEmpty()) {
+                    authHolderArray.add(textField.getText());
+                }
+                textArea.setText(String.join("\n", authHolderArray));
+                textField.setText("");
+            });
             JPanel myPanel = new JPanel();
-            myPanel.setLayout(null);
-            myPanel.add(xField);
-            myPanel.add(xlab);
 
-            myPanel.add(yField);
+            myPanel.add(textField);
+            myPanel.add(xbtn);
+
+            myPanel.add(textArea);
+            myPanel.setLayout(null);
             UIManager.put("OptionPane.minimumSize", new Dimension(400, 400));
             JOptionPane.showConfirmDialog(null, myPanel,
                     "Add Authors ",
                     JOptionPane.OK_CANCEL_OPTION,
                     JOptionPane.PLAIN_MESSAGE);
+
+            if(JOptionPane.OK_OPTION == 0) {
+                authors.setText((String.join(";",authHolderArray)));
+            }
         });
         // edit Authors end
 
@@ -368,7 +381,6 @@ public class RefSystemGUI extends JFrame {
         export_to.add(exportText);
 
         importCsv.addActionListener(e -> {
-
             FileDialog fd = new FileDialog(new JFrame());
             fd.setVisible(true);
             File[] f = fd.getFiles();
@@ -378,6 +390,19 @@ public class RefSystemGUI extends JFrame {
                 } catch (IOException ioException) {
                     ioException.printStackTrace();
                 }
+            }
+        });
+
+
+        exportText.addActionListener(e -> {
+            if(!txtAreaPanel.getText().isEmpty()) {
+                txtAreaPanel.setText(bibliography.exportToText(txtAreaPanel.getText()));
+            }
+        });
+
+        exportXml.addActionListener(e -> {
+            if(!txtAreaPanel.getText().isEmpty()){
+                txtAreaPanel.setText(bibliography.exportXML());
             }
         });
 
@@ -403,12 +428,7 @@ public class RefSystemGUI extends JFrame {
 
     public String addCitation(String what) {
         String message = "Citation added\n";
-//        try {
-//            bibliography.importMany("all_data_corrected.csv");
-//        }
-//        catch (IOException e){
-//            message = "MUTI";
-//        }
+
         System.out.println("Adding " + what + " citation to the Bibliography");
 
         // global attribute declaration

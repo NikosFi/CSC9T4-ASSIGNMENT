@@ -26,4 +26,8 @@ public class TextAreaPanel extends JPanel {
     public void setText (String text){
        output.setText(text);
     }
+
+    public String getText () {
+        return output.getText();
+    }
 }

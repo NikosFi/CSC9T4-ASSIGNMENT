@@ -17,6 +17,14 @@ public class RefBookChapter extends Ref {
         this.editor = editor;
     }
 
+    public String getBook() {
+        return book;
+    }
+
+    public String getEditor() {
+        return editor;
+    }
+
     @Override
     public String getCitation() {
         return super.getCitation();
