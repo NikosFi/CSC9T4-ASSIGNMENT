@@ -26,62 +26,58 @@ public class XmlWriter {
             build = dFact.newDocumentBuilder();
             doc = build.newDocument();
 
-            Element root = doc.createElement("Studentinfo");
+            Element root = doc.createElement("bibliography");
             doc.appendChild(root);
 
 
+
+
             for (Ref ref : list) {
+                Element item = doc.createElement("ref");
+                root.appendChild(item);
+                commonRefElements(item, ref);
+
 
                 if (ref instanceof RefJournal) {
-                    Element refJournal = doc.createElement("RefJournal");
-                    root.appendChild(refJournal);
-
-                    commonRefElements(refJournal, ref);
-
+                    item.setAttribute("type",RefJournal.class.getSimpleName());
                     Element journal = doc.createElement("journal");
                     journal.appendChild(doc.createTextNode(String.valueOf(((RefJournal) ref)
                             .getJournal())));
-                    refJournal.appendChild(journal);
+                    item.appendChild(journal);
 
                     Element volume = doc.createElement("volume");
                     volume.appendChild(doc.createTextNode(String.valueOf(((RefJournal) ref).getVolume())));
-                    refJournal.appendChild(volume);
+                    item.appendChild(volume);
 
                     Element issue = doc.createElement("issue");
                     issue.appendChild(doc.createTextNode(String.valueOf(((RefJournal) ref).getIssue())));
-                    refJournal.appendChild(issue);
+                    item.appendChild(issue);
                 }
 
                 if (ref instanceof RefConference) {
-                    Element refConference = doc.createElement("RefConference");
-                    root.appendChild(refConference);
-
-
-                    commonRefElements(refConference, ref);
+                    item.setAttribute("type",RefConference.class.getSimpleName());
 
                     Element venue = doc.createElement("venue");
+
                     venue.appendChild(doc.createTextNode(String.valueOf(((RefConference) ref).getVenue())));
-                    refConference.appendChild(venue);
+                    item.appendChild(venue);
 
                     Element location = doc.createElement("location");
                     location.appendChild(doc.createTextNode(String.valueOf(((RefConference) ref).getLocation())));
-                    refConference.appendChild(location);
+                    item.appendChild(location);
 
                 }
                 if (ref instanceof RefBookChapter) {
-                    Element refBook = doc.createElement("RefBook");
-                    root.appendChild(refBook);
-                    commonRefElements(refBook, ref);
+                    item.setAttribute("type",RefBookChapter.class.getSimpleName());
 
-                    commonRefElements(refBook, ref);
 
                     Element book = doc.createElement("book");
                     book.appendChild(doc.createTextNode(String.valueOf(((RefBookChapter) ref).getBook())));
-                    refBook.appendChild(book);
+                    item.appendChild(book);
 
                     Element editor = doc.createElement("editor");
                     editor.appendChild(doc.createTextNode(String.valueOf(((RefBookChapter) ref).getEditor())));
-                    refBook.appendChild(editor);
+                    item.appendChild(editor);
                 }
 
             }
@@ -93,9 +89,9 @@ public class XmlWriter {
             // format the XML nicely
             aTransformer.setOutputProperty(OutputKeys.ENCODING, "ISO-8859-1");
 
+            aTransformer.setOutputProperty(OutputKeys.INDENT, "yes");
             aTransformer.setOutputProperty(
                     "{http://xml.apache.org/xslt}indent-amount", "4");
-            aTransformer.setOutputProperty(OutputKeys.INDENT, "yes");
 
             DOMSource source = new DOMSource(doc);
             try {

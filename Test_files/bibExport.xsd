@@ -1,17 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="bibliography" type="bibType"/>
-    <xs:complexType name="refType">
-        <xs:sequence>
-            <xs:element type="xs:string" name="title"/>
-            <xs:element type="xs:string" name="author"/>
-        </xs:sequence>
-        <xs:attribute name="category" use="required"/>
-    </xs:complexType>
-    <xs:complexType name="bibType">
-        <xs:sequence>
-            <xs:element type="refType" name="ref" maxOccurs="unbounded" minOccurs="0"/>
-        </xs:sequence>
-    </xs:complexType>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="bibliography">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ref" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="title"/>
+                            <xs:element type="xs:string" name="authors"/>
+                            <xs:element type="xs:string" name="doi"/>
+                            <xs:element type="xs:string" name="publisher"/>
+                            <xs:element type="xs:short" name="pubyear"/>
+                            <xs:element type="xs:string" name="dateAdded"/>
+                            <xs:element type="xs:string" name="journal" minOccurs="0"/>
+                            <xs:element type="xs:byte" name="volume" minOccurs="0"/>
+                            <xs:element type="xs:byte" name="issue" minOccurs="0"/>
+                            <xs:element type="xs:string" name="venue" minOccurs="0"/>
+                            <xs:element type="xs:string" name="location" minOccurs="0"/>
+                            <xs:element type="xs:string" name="book" minOccurs="0"/>
+                            <xs:element type="xs:string" name="editor" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>

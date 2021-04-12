@@ -38,7 +38,6 @@ public class DropDown {
             if (index == -1 && value == null) {
                 setText(_title); label.setOpaque(false);
             }
-            else setText(value.toString());
 
             if (isSelected) {
                 setBackground(new Color(r,g,b));
