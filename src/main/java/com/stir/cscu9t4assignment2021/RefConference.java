@@ -1,8 +1,9 @@
 package com.stir.cscu9t4assignment2021;
 
-import java.util.Arrays;
 import java.util.Date;
-
+/**
+ * @author 2836012
+ */
 public class RefConference extends Ref {
 
     private String venue;

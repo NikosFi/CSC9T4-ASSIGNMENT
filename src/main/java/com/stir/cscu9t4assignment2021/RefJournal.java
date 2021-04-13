@@ -1,10 +1,8 @@
 package com.stir.cscu9t4assignment2021;
 
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.function.ToDoubleBiFunction;
-
+/**
+ * @author 2836012
+ */
 public class RefJournal extends Ref {
     private String journal;
     private int volume;

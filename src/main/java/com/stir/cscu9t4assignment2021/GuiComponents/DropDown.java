@@ -2,7 +2,9 @@ package com.stir.cscu9t4assignment2021.GuiComponents;
 
 import javax.swing.*;
 import java.awt.*;
-
+/**
+ * @author 2836012
+ */
 
 public class DropDown {
 
@@ -29,7 +31,6 @@ public class DropDown {
         public Component getListCellRendererComponent(JList list, Object value,
                                                       int index, boolean isSelected, boolean hasFocus)
         {
-
             JLabel label = (JLabel) super.getListCellRendererComponent(list,value,index,isSelected,hasFocus);
             label.setOpaque(isSelected); // Highlight only when selected
             if (index != -1)

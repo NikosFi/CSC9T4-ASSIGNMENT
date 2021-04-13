@@ -12,6 +12,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/**
+ * @author 2836012
+ */
 public class RefCollection {
     private String filePath;
     private String message;
@@ -21,30 +24,57 @@ public class RefCollection {
     private List<Ref> falseImports;
 
 
+    /**
+     * constructor to initialize two arrays
+     */
     public RefCollection() {
         ct = new ArrayList<Ref>();
-        falseImports = new ArrayList<Ref>();
+        falseImports = new ArrayList<Ref>(); //for
     } //constructor
 
     // add a record to the list
 
-
+    /**
+     * add Ref object to the list
+     * @param ref
+     */
     public void addCite(Ref ref) {
         ct.add(ref);
     }
 
+    /**
+     * set global String filepath value in order to be called from the frontend
+     * @param filePath
+     */
     public void setFilePath(String filePath) {
         this.filePath = filePath;
     }
 
+    /**
+     * return filepath
+     * @return filePath
+     */
     public String getFilePath() {
         return filePath;
     }
 
+    /**
+     * return the List so it can be used from the front end for the table
+     * @return ct
+     */
     public List<Ref> allEntries(){
         return ct;
     }
 
+    /**
+     * searches for all journals by specified value (provided by the frontend)
+     * sorts by the first author
+     * maps the results
+     * and collects the stream result to an array
+     *  Java 8 streams
+     * @param journal
+     * @return that the search had empty result ; else the results (use of ternary operator)
+     */
     public String lookUpByJournal(String journal) {
 
         String message = "";
@@ -57,7 +87,12 @@ public class RefCollection {
         return message = (journalLookup.isEmpty()) ? "There are no Journals with this name." : journalLookup;
     }
 
-
+    /**
+     * searches for all venues (value provided by the user) only in RefConferece instances
+     *
+     * @param venue
+     * @return either 0 results and prompts messages or the results found sorted by the first author
+     */
     public String lookUpByVenue(String venue) {
         String message = "";
         String venueLookUp = ct.stream()
@@ -71,6 +106,11 @@ public class RefCollection {
     }
 
 
+    /**
+     * searches for all publishers  in all the objects
+     * @param publisher
+     * @return either message that no publishers found or the results
+     */
     public String lookUpByPublisher(String publisher) {
 
         if(publisher.isEmpty()){
@@ -88,15 +128,28 @@ public class RefCollection {
         return message = (publisherLookUp.isEmpty()) ? "There are no Publishers with this name." : publisherLookUp;
     }
 
+    /**
+     * not used
+     * @return
+     */
+//    public int getNumberOfRefs(String type) {
+//        return ct.size();
+//    }
 
-    public int getNumberOfRefs(String type) {
-        return ct.size();
-    }
+    /**
+     * not used
+     * @return
+     */
+//    public String exportAll() {
+//        return null;
+//    }
 
-    public String exportAll() {
-        return null;
-    }
-
+    /**
+     * exports an xml by using an external class for the implementation
+     * uses the FileDialog
+     * @param savePath
+     * @return
+     */
     public String exportXML(String savePath) {
         XmlWriter xmlWriter = new XmlWriter();
 
@@ -106,7 +159,12 @@ public class RefCollection {
         return "Your file is located to: " + savePath;
     }
 
-
+    /**
+     * writes new file on the specified path
+     * @param source
+     * @param savePath
+     * @return
+     */
     public String exportToText(String source,String savePath) {
 
         File newExportedText = new File(savePath);
@@ -120,6 +178,11 @@ public class RefCollection {
         return "Your file is located to: " + savePath;
     }
 
+    /**
+     * maps each valid (not null based on validation ) line into an object and adds it to the ct
+     * @return
+     * @throws IOException
+     */
     public String importMany() throws IOException {
 
         AtomicInteger countInvDates = new AtomicInteger();
@@ -128,8 +191,6 @@ public class RefCollection {
             setMessage("Invalid CSV Header. Please follow the instructions");
             return getMessage();
         }
-
-
 
         Files.lines(Path.of(filePath))
                 .skip(1)
@@ -167,7 +228,10 @@ public class RefCollection {
     }
 
 
-
+    /**
+     * functional programming oriented utilizing the interface fucntion which takes
+     * a string and return and object or null based on the conditions specified in the body
+     */
     private Function<String, Ref> objectToAdd = (line) -> {
 
         String[] cols = line.split(",", -1);
@@ -240,7 +304,11 @@ public class RefCollection {
 
     };
 
-
+    /**
+     * utilizes varargs to check multiple values
+     * @param args
+     * @return
+     */
     private boolean notNull(String... args) {
         for (String arg : args) {
             if (arg.equals("")) {
@@ -273,7 +341,10 @@ public class RefCollection {
         }
     }
 
-
+    /**
+     * return the number that corresponds to the header of the first line
+     * @return
+     */
     public int importType() {
 
         String[] checkFirstLine = {};
@@ -282,7 +353,6 @@ public class RefCollection {
             String line = "";
             BufferedReader br = new BufferedReader(new FileReader(getFilePath()));
             line = br.readLine();
-            System.out.println(line);
             checkFirstLine = line.split(",");
         } catch (IOException e) {
             System.out.println("Invalid File");
@@ -331,6 +401,7 @@ public class RefCollection {
     }
 
 
+    /* ************* Returns the objects to be added ************** */
     //make the method to trim and add in any case
     private RefJournal importJournal(String[] lineCols, int dayAdded, int monthAdded, int yearAdded) {
 

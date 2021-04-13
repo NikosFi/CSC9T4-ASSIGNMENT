@@ -1,13 +1,11 @@
 package com.stir.cscu9t4assignment2021;
 
-import javax.swing.table.DefaultTableModel;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
 import java.util.Date;
-
+/**
+ * @author 2836012
+ */
 public class Ref  {
 
 
@@ -19,8 +17,6 @@ public class Ref  {
 
     private String dateAdded;
     private DateTimeFormatter df;
-
-
 
 
     public Ref(String title, String[] authors,int pubyear, String publisher, String doi) {
@@ -94,9 +90,6 @@ public class Ref  {
         } else {
             return dateAdded;
         }
-
-
-
     }
 
     public String[] getAuthors() {

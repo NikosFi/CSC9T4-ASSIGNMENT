@@ -17,7 +17,7 @@ import java.util.Date;
 
 
 /**
- * @author null
+ * @author 2836012
  */
 public class RefSystemGUI extends JFrame {
 
@@ -112,6 +112,8 @@ public class RefSystemGUI extends JFrame {
     public RefSystemGUI() {
 
         super("Bibliography");
+        txtAreaPanel.setText("Tips: Use the Tools in the menu bar to import or export \n" +
+                            "While exporting make sure that the content you want to export is displayed in the text Area");
 
         Border blackline = BorderFactory.createLineBorder(Color.black);
 
@@ -175,8 +177,6 @@ public class RefSystemGUI extends JFrame {
             JTextArea textArea = new JTextArea(40,10);
             textArea.setBounds(5, 50, 360, 300);
 
-
-
             JButton xbtn = new JButton("Add");
             xbtn.setBounds(270, 20, 100, 20);
             xbtn.addActionListener(event -> {
@@ -214,26 +214,7 @@ public class RefSystemGUI extends JFrame {
         title.setNextFocusableComponent(authors);
         authors.setNextFocusableComponent(editAuthors);
 
-        // fnp add:
         fnp.add(typeList);
-        fnp.add(labTitle);
-        fnp.add(title);
-        fnp.add(editAuthors);
-        fnp.add(labAuthors);
-        fnp.add(authors);
-        fnp.add(labPubYear);
-        fnp.add(pubYear);
-        fnp.add(labPublisher);
-        fnp.add(publisher);
-        fnp.add(labDOI);
-        fnp.add(doi);
-        fnp.add(lday);
-        fnp.add(day);
-        fnp.add(lmonth);
-        fnp.add(month);
-        fnp.add(lyear);
-        fnp.add(year);
-
 
         typeList.addActionListener(e -> {
             switch (typeList.getSelectedIndex()) {
@@ -253,8 +234,27 @@ public class RefSystemGUI extends JFrame {
                     fnp.add(volume);
                     fnp.removeFields(labConferenceName, labLocation, conference, location);
                     fnp.removeFields(labBookTitle, labEditor, bookTitle, editor);
-                    String message = "Journal is pressed";
-                    txtAreaPanel.setText(message);
+
+
+                    // fnp add:
+                    fnp.add(labTitle);
+                    fnp.add(title);
+                    fnp.add(editAuthors);
+                    fnp.add(labAuthors);
+                    fnp.add(authors);
+                    fnp.add(labPubYear);
+                    fnp.add(pubYear);
+                    fnp.add(labPublisher);
+                    fnp.add(publisher);
+                    fnp.add(labDOI);
+                    fnp.add(doi);
+                    fnp.add(lday);
+                    fnp.add(day);
+                    fnp.add(lmonth);
+                    fnp.add(month);
+                    fnp.add(lyear);
+                    fnp.add(year);
+                    fnp.add(btnInsert);
                     repaint();
                     break;
                 case 1:
@@ -271,6 +271,26 @@ public class RefSystemGUI extends JFrame {
                     location.setBounds(80, 330, 140, 20);
                     fnp.add(labLocation);
                     fnp.add(location);
+
+                    // fnp add:
+                    fnp.add(labTitle);
+                    fnp.add(title);
+                    fnp.add(editAuthors);
+                    fnp.add(labAuthors);
+                    fnp.add(authors);
+                    fnp.add(labPubYear);
+                    fnp.add(pubYear);
+                    fnp.add(labPublisher);
+                    fnp.add(publisher);
+                    fnp.add(labDOI);
+                    fnp.add(doi);
+                    fnp.add(lday);
+                    fnp.add(day);
+                    fnp.add(lmonth);
+                    fnp.add(month);
+                    fnp.add(lyear);
+                    fnp.add(year);
+                    fnp.add(btnInsert);
                     repaint();
                     break;
                 case 2:
@@ -286,6 +306,26 @@ public class RefSystemGUI extends JFrame {
                     editor.setBounds(85, 330, 135, 20);
                     fnp.add(labEditor);
                     fnp.add(editor);
+
+                    // fnp add:
+                    fnp.add(labTitle);
+                    fnp.add(title);
+                    fnp.add(editAuthors);
+                    fnp.add(labAuthors);
+                    fnp.add(authors);
+                    fnp.add(labPubYear);
+                    fnp.add(pubYear);
+                    fnp.add(labPublisher);
+                    fnp.add(publisher);
+                    fnp.add(labDOI);
+                    fnp.add(doi);
+                    fnp.add(lday);
+                    fnp.add(day);
+                    fnp.add(lmonth);
+                    fnp.add(month);
+                    fnp.add(lyear);
+                    fnp.add(year);
+                    fnp.add(btnInsert);
                     repaint();
                     break;
             }
@@ -322,6 +362,7 @@ public class RefSystemGUI extends JFrame {
                     break;
             }
         });
+
         searchField.addFocusListener(new FocusListener() {
             @Override
             public void focusGained(FocusEvent e) {
@@ -376,13 +417,11 @@ public class RefSystemGUI extends JFrame {
 
 
         btnInsert.setBounds(20, 420, 250, 30);
-        fnp.add(btnInsert);
         btnInsert.addActionListener(e -> {
             String message = "";
             message = addCitation("generic");
             txtAreaPanel.setText(message);
         });
-
 
         tools = new JMenu("Tools");
         file =new JMenu("File");
@@ -411,8 +450,6 @@ public class RefSystemGUI extends JFrame {
                     ioException.printStackTrace();
                 }
             }
-
-
         });
 
 
@@ -457,11 +494,13 @@ public class RefSystemGUI extends JFrame {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         pack();
         setSize(screenSize.width, screenSize.height);
-
-
     }
 
-
+    /**
+     *  user adds citation based on the combobox value
+     * @param what
+     * @return
+     */
     public String addCitation(String what) {
         String message = "Citation added\n";
 
@@ -565,6 +604,11 @@ public class RefSystemGUI extends JFrame {
         return message;
     }
 
+    /**
+     * receives text to be displayed by the refcollectoin
+     *
+     * @return
+     */
     private String receiveMessageFromCollection() {
         return bibliography.getMessage();
     }
@@ -572,23 +616,6 @@ public class RefSystemGUI extends JFrame {
     private void displayMessage() {
         txtAreaPanel.setText(receiveMessageFromCollection());
     }
-
-
-
-//    public boolean validateDate(String date) {
-//        try {
-//            LocalDate.parse(date,
-//                    DateTimeFormatter.ofPattern("uuuu-M-d")
-//                            .withResolverStyle(ResolverStyle.STRICT)
-//            );
-//            return true;
-//        } catch (DateTimeException e) {
-//            System.out.println(e);
-//            return false;
-//        }
-//    }
-
-
 }
 
 /*************************************************** END OF RefSystemGUI **********************************************/
