@@ -1,0 +1,3403 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bibliography>
+  <ref type="RefJournal">
+    <title>Title-B-0</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2015</pubyear>
+    <publisher>ACM</publisher>
+    <doi>533/49</doi>
+    <date> 06/02/2021 </date>
+    <journal>journal-s</journal>
+    <volume>9</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-0</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>1999</pubyear>
+    <publisher>ACM</publisher>
+    <doi>765/1773</doi>
+    <date> 23/03/2021 </date>
+    <venue>Conference-3</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-0</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2006</pubyear>
+    <publisher>ACM</publisher>
+    <doi>202/1031</doi>
+    <date> 08/05/2021 </date>
+    <book>book-a</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-1</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2007</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>580/491</doi>
+    <date> 13/02/2021 </date>
+    <journal>journal-x</journal>
+    <volume>5</volume>
+    <issue>5</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-C-1</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2019</pubyear>
+    <publisher>Springer</publisher>
+    <doi>611/1124</doi>
+    <date> 23/11/2021 </date>
+    <venue>Conference-2</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-1</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2016</pubyear>
+    <publisher>Springer</publisher>
+    <doi>741/1240</doi>
+    <date> 14/06/2021 </date>
+    <book>book-g</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-F-2</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2004</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1045/875</doi>
+    <date> 27/10/2021 </date>
+    <journal>journal-z</journal>
+    <volume>5</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-2</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2009</pubyear>
+    <publisher>ACM</publisher>
+    <doi>71/902</doi>
+    <date> 19/10/2021 </date>
+    <venue>Conference-3</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-B-2</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2008</pubyear>
+    <publisher>Springer</publisher>
+    <doi>884/1342</doi>
+    <date> 25/09/2021 </date>
+    <book>book-f</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-3</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2008</pubyear>
+    <publisher>Springer</publisher>
+    <doi>173/1568</doi>
+    <date> 04/09/2021 </date>
+    <journal>journal-s</journal>
+    <volume>2</volume>
+    <issue>5</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-3</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2019</pubyear>
+    <publisher></publisher>
+    <doi>1163/92</doi>
+    <date> 21/04/2021 </date>
+    <venue>Conference-3</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-3</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2005</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1029/600</doi>
+    <date> 27/06/2021 </date>
+    <book>book-g</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-4</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2018</pubyear>
+    <publisher>ACM</publisher>
+    <doi>628/863</doi>
+    <date> 11/08/2021 </date>
+    <journal>journal-q</journal>
+    <volume>7</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-D-4</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2018</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1453/922</doi>
+    <date> 05/11/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-4</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2002</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1011/1591</doi>
+    <date> 02/11/2021 </date>
+    <book>book-a</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-F-5</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2001</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>291/626</doi>
+    <date> 23/10/2021 </date>
+    <journal>journal-p</journal>
+    <volume>6</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-5</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2012</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1231/565</doi>
+    <date> 03/05/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-5</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Springer</publisher>
+    <doi>695/1883</doi>
+    <date> 04/08/2021 </date>
+    <book>book-f</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-6</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2016</pubyear>
+    <publisher>Springer</publisher>
+    <doi>888/1206</doi>
+    <date> 07/07/2021 </date>
+    <journal>journal-z</journal>
+    <volume>5</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-6</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2005</pubyear>
+    <publisher>ACM</publisher>
+    <doi>914/1414</doi>
+    <date> 19/04/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-6</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2012</pubyear>
+    <publisher>Springer</publisher>
+    <doi>808/1852</doi>
+    <date> 26/04/2021 </date>
+    <book>book-h</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-7</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2014</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1745/1497</doi>
+    <date> 13/05/2021 </date>
+    <journal>journal-t</journal>
+    <volume>3</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-7</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2005</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>176/1224</doi>
+    <date> 23/01/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-7</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2016</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1297/445</doi>
+    <date> 11/11/2021 </date>
+    <book>book-g</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-E-8</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2009</pubyear>
+    <publisher>ACM</publisher>
+    <doi></doi>
+    <date> 09/02/2021 </date>
+    <journal>journal-x</journal>
+    <volume>5</volume>
+    <issue>2</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-8</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2019</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1212/1395</doi>
+    <date> 13/10/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-8</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>1999</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1509/1651</doi>
+    <date> 03/10/2021 </date>
+    <book>book-k</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-9</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2016</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1677/1735</doi>
+    <date> 12/01/2021 </date>
+    <journal>journal-y</journal>
+    <volume>4</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-C-9</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2005</pubyear>
+    <publisher>Springer</publisher>
+    <doi>282/965</doi>
+    <date> 01/08/2021 </date>
+    <venue>Conference-2</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-9</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2002</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1029/434</doi>
+    <date> 03/09/2021 </date>
+    <book>book-d</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-10</title>
+    <authors>Jason Adair</authors>
+    <pubyear>1999</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1705/733</doi>
+    <date> 29/06/2021 </date>
+    <journal>journal-x</journal>
+    <volume>9</volume>
+    <issue>5</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-10</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2019</pubyear>
+    <publisher>Springer</publisher>
+    <doi>332/224</doi>
+    <date> 19/08/2021 </date>
+    <venue>Conference-1</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-10</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2001</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1268/1734</doi>
+    <date> 15/01/2021 </date>
+    <book>book-j</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-E-11</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2012</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1163/629</doi>
+    <date> 13/07/2021 </date>
+    <journal>journal-s</journal>
+    <volume>4</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-F-11</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2005</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1353/1083</doi>
+    <date> 13/04/2021 </date>
+    <venue>Conference-5</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-11</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2015</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1015/183</doi>
+    <date> 13/02/2021 </date>
+    <book>book-a</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-E-12</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2000</pubyear>
+    <publisher>Springer</publisher>
+    <doi>67/1418</doi>
+    <date> 12/02/2021 </date>
+    <journal>journal-q</journal>
+    <volume>2</volume>
+    <issue>5</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-12</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2011</pubyear>
+    <publisher>ACM</publisher>
+    <doi>825/1893</doi>
+    <date> 24/07/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-T</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-12</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2004</pubyear>
+    <publisher>ACM</publisher>
+    <doi>474/1684</doi>
+    <date> 17/09/2021 </date>
+    <book>book-d</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-13</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2020</pubyear>
+    <publisher>ACM</publisher>
+    <doi>969/1735</doi>
+    <date> 14/08/2021 </date>
+    <journal>journal-z</journal>
+    <volume>3</volume>
+    <issue>3</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-B-13</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2015</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>597/1256</doi>
+    <date> 29/09/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-13</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2011</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1164/1858</doi>
+    <date> 26/08/2021 </date>
+    <book>book-k</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-C-14</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2011</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1267/1182</doi>
+    <date> 02/05/2021 </date>
+    <journal>journal-t</journal>
+    <volume>6</volume>
+    <issue>2</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-G-14</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>301/681</doi>
+    <date> 11/06/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-14</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2009</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1619/631</doi>
+    <date> 06/04/2021 </date>
+    <book>book-k</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-15</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1241/1087</doi>
+    <date> 06/06/2021 </date>
+    <journal>journal-s</journal>
+    <volume>4</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-C-15</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2009</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1226/1154</doi>
+    <date> 28/01/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-B-15</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2008</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1672/1510</doi>
+    <date> 08/04/2021 </date>
+    <book>book-d</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-16</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2004</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1020/96</doi>
+    <date> 12/08/2021 </date>
+    <journal>journal-y</journal>
+    <volume>7</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-16</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Springer</publisher>
+    <doi>520/257</doi>
+    <date> 05/04/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-C-16</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2010</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>88/23</doi>
+    <date> 27/07/2021 </date>
+    <book>book-a</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-C-17</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2012</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1926/268</doi>
+    <date> 14/11/2021 </date>
+    <journal>journal-s</journal>
+    <volume>8</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-17</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2016</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>120/299</doi>
+    <date> 10/06/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-17</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2002</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1230/188</doi>
+    <date> 17/03/2021 </date>
+    <book>book-g</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-F-18</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2001</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1866/1913</doi>
+    <date> 17/04/2021 </date>
+    <journal>journal-s</journal>
+    <volume>6</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-18</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Springer</publisher>
+    <doi>572/1553</doi>
+    <date> 23/02/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-18</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2017</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1237/1428</doi>
+    <date> 02/09/2021 </date>
+    <book>book-f</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-19</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2000</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>566/238</doi>
+    <date> 05/06/2021 </date>
+    <journal>journal-s</journal>
+    <volume>2</volume>
+    <issue>9</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-19</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2012</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>475/524</doi>
+    <date> 23/10/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-19</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1244/1272</doi>
+    <date> 02/07/2021 </date>
+    <book>book-s</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-20</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2004</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1689/1303</doi>
+    <date> 06/10/2021 </date>
+    <journal>journal-s</journal>
+    <volume>1</volume>
+    <issue>2</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-20</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2018</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1322/539</doi>
+    <date> 29/03/2021 </date>
+    <venue>Conference-2</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-20</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2004</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1480/693</doi>
+    <date> 19/10/2021 </date>
+    <book>book-h</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-21</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2016</pubyear>
+    <publisher>Springer</publisher>
+    <doi>336/1717</doi>
+    <date> 15/04/2021 </date>
+    <journal>journal-s</journal>
+    <volume>4</volume>
+    <issue>3</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-C-21</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2014</pubyear>
+    <publisher>ACM</publisher>
+    <doi>509/1128</doi>
+    <date> 15/08/2021 </date>
+    <venue>Conference-2</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-21</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2003</pubyear>
+    <publisher>ACM</publisher>
+    <doi>270/1047</doi>
+    <date> 01/03/2021 </date>
+    <book>book-a</book>
+    <editor>Micky Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-22</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1935/1932</doi>
+    <date> 22/09/2021 </date>
+    <journal>journal-t</journal>
+    <volume>2</volume>
+    <issue>4</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-22</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2005</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1841/748</doi>
+    <date> 15/11/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-22</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2014</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1133/1335</doi>
+    <date> 04/05/2021 </date>
+    <book>book-j</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-C-23</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>1999</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>720/600</doi>
+    <date> 01/09/2021 </date>
+    <journal>journal-t</journal>
+    <volume>3</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-F-23</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2002</pubyear>
+    <publisher>ACM</publisher>
+    <doi>319/1720</doi>
+    <date> 23/03/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-23</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2001</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>661/1633</doi>
+    <date> 24/07/2021 </date>
+    <book>book-g</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-B-24</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2001</pubyear>
+    <publisher>Springer</publisher>
+    <doi>670/896</doi>
+    <date> 11/11/2021 </date>
+    <journal>journal-x</journal>
+    <volume>4</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-G-24</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2013</pubyear>
+    <publisher>ACM</publisher>
+    <doi>588/27</doi>
+    <date> 14/05/2021 </date>
+    <venue>Conference-2</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-24</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2000</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>78/504</doi>
+    <date> 15/10/2021 </date>
+    <book>book-l</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-25</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2005</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1706/1126</doi>
+    <date> 08/01/2021 </date>
+    <journal>journal-s</journal>
+    <volume>7</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-25</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2011</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1838/228</doi>
+    <date> 23/01/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-25</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2000</pubyear>
+    <publisher>Springer</publisher>
+    <doi>53/953</doi>
+    <date> 09/01/2021 </date>
+    <book>book-j</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-26</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2003</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1381/1967</doi>
+    <date> 23/02/2021 </date>
+    <journal>journal-z</journal>
+    <volume>5</volume>
+    <issue>4</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-26</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2011</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>192/1993</doi>
+    <date> 27/09/2021 </date>
+    <venue>Conference-5</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-26</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2009</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>332/765</doi>
+    <date> 18/11/2021 </date>
+    <book>book-s</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-27</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2003</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>352/1994</doi>
+    <date> 20/03/2021 </date>
+    <journal>journal-t</journal>
+    <volume>5</volume>
+    <issue>2</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-F-27</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2009</pubyear>
+    <publisher>ACM</publisher>
+    <doi>637/833</doi>
+    <date> 18/06/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-27</title>
+    <authors>Jason Adair</authors>
+    <pubyear>1999</pubyear>
+    <publisher>Springer</publisher>
+    <doi>74/516</doi>
+    <date> 24/06/2021 </date>
+    <book>book-a</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-B-28</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2014</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>727/505</doi>
+    <date> 17/08/2021 </date>
+    <journal>journal-x</journal>
+    <volume>6</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-C-28</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2015</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1015/1391</doi>
+    <date> 22/03/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-T</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-B-28</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2004</pubyear>
+    <publisher>ACM</publisher>
+    <doi>929/1911</doi>
+    <date> 10/09/2021 </date>
+    <book>book-k</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-B-29</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2018</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1917/1767</doi>
+    <date> 26/06/2021 </date>
+    <journal>journal-p</journal>
+    <volume>9</volume>
+    <issue>4</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-29</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2012</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1583/1873</doi>
+    <date> 17/04/2021 </date>
+    <venue>Conference-2</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-29</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2015</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1760/1827</doi>
+    <date> 13/03/2021 </date>
+    <book>book-g</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-B-30</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2007</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1908/1411</doi>
+    <date> 08/08/2021 </date>
+    <journal>journal-s</journal>
+    <volume>3</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-F-30</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2017</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>508/81</doi>
+    <date> 19/08/2021 </date>
+    <venue>Conference-2</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-30</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2005</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1410/101</doi>
+    <date> 21/10/2021 </date>
+    <book>book-h</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-C-31</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2004</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1941/1344</doi>
+    <date> 18/08/2021 </date>
+    <journal>journal-t</journal>
+    <volume>7</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-31</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2018</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1541/13</doi>
+    <date> 18/06/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-31</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2016</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1146/1097</doi>
+    <date> 04/11/2021 </date>
+    <book>book-f</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-B-32</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2007</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1496/184</doi>
+    <date> 22/10/2021 </date>
+    <journal>journal-t</journal>
+    <volume>1</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-32</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2013</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1989/224</doi>
+    <date> 28/04/2021 </date>
+    <venue>Conference-1</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-32</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2000</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>582/847</doi>
+    <date> 04/04/2021 </date>
+    <book>book-g</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-33</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2009</pubyear>
+    <publisher>Springer</publisher>
+    <doi>305/67</doi>
+    <date> 06/09/2021 </date>
+    <journal>journal-y</journal>
+    <volume>1</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-F-33</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2019</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>415/1989</doi>
+    <date> 13/06/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-33</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2004</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1298/1689</doi>
+    <date> 18/04/2021 </date>
+    <book>book-h</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-34</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2007</pubyear>
+    <publisher>Springer</publisher>
+    <doi>151/1736</doi>
+    <date> 24/07/2021 </date>
+    <journal>journal-t</journal>
+    <volume>3</volume>
+    <issue>9</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-34</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2012</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1299/676</doi>
+    <date> 07/11/2021 </date>
+    <venue>Conference-1</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-34</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2012</pubyear>
+    <publisher>ACM</publisher>
+    <doi>482/735</doi>
+    <date> 12/04/2021 </date>
+    <book>book-s</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-35</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2020</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1982/1433</doi>
+    <date> 09/04/2021 </date>
+    <journal>journal-s</journal>
+    <volume>3</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-D-35</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2012</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1062/1477</doi>
+    <date> 20/11/2021 </date>
+    <venue>Conference-3</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-35</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2008</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1889/889</doi>
+    <date> 12/07/2021 </date>
+    <book>book-s</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-36</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2019</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>732/735</doi>
+    <date> 08/03/2021 </date>
+    <journal>journal-t</journal>
+    <volume>8</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-G-36</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2014</pubyear>
+    <publisher>ACM</publisher>
+    <doi>65/1568</doi>
+    <date> 05/10/2021 </date>
+    <venue>Conference-3</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-36</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2019</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1316/516</doi>
+    <date> 13/02/2021 </date>
+    <book>book-h</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-37</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2001</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>787/1348</doi>
+    <date> 11/10/2021 </date>
+    <journal>journal-p</journal>
+    <volume>5</volume>
+    <issue>4</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-F-37</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2008</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1733/740</doi>
+    <date> 23/11/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-T</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-37</title>
+    <authors>Jason Adair</authors>
+    <pubyear>1999</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>712/1440</doi>
+    <date> 23/07/2021 </date>
+    <book>book-l</book>
+    <editor>Micky Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-38</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2020</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1734/1869</doi>
+    <date> 13/10/2021 </date>
+    <journal>journal-z</journal>
+    <volume>4</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-38</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2018</pubyear>
+    <publisher>ACM</publisher>
+    <doi>391/1807</doi>
+    <date> 22/09/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-38</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2003</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>723/904</doi>
+    <date> 04/08/2021 </date>
+    <book>book-a</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-39</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2018</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>410/1390</doi>
+    <date> 02/08/2021 </date>
+    <journal>journal-x</journal>
+    <volume>8</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-B-39</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2007</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1783/1750</doi>
+    <date> 19/06/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-39</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2014</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1968/1488</doi>
+    <date> 12/11/2021 </date>
+    <book>book-d</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-40</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2019</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1228/1619</doi>
+    <date> 20/11/2021 </date>
+    <journal>journal-y</journal>
+    <volume>7</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-G-40</title>
+    <authors>Jason Adair</authors>
+    <pubyear>1999</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1369/896</doi>
+    <date> 10/05/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-40</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1456/1903</doi>
+    <date> 09/05/2021 </date>
+    <book>book-h</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-41</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2015</pubyear>
+    <publisher>Springer</publisher>
+    <doi>892/1103</doi>
+    <date> 01/01/2021 </date>
+    <journal>journal-z</journal>
+    <volume>1</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-C-41</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2016</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1976/801</doi>
+    <date> 28/03/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-41</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2004</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1679/1955</doi>
+    <date> 24/01/2021 </date>
+    <book>book-s</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-C-42</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2001</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>120/843</doi>
+    <date> 23/04/2021 </date>
+    <journal>journal-t</journal>
+    <volume>8</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-42</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2020</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>534/611</doi>
+    <date> 14/10/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-42</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1759/98</doi>
+    <date> 23/10/2021 </date>
+    <book>book-h</book>
+    <editor>Micky Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-E-43</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2005</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1218/1769</doi>
+    <date> 15/08/2021 </date>
+    <journal>journal-t</journal>
+    <volume>3</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-43</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2002</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>838/142</doi>
+    <date> 26/06/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-B-43</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2010</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1053/1616</doi>
+    <date> 21/06/2021 </date>
+    <book>book-a</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-F-44</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2008</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1485/634</doi>
+    <date> 26/07/2021 </date>
+    <journal>journal-s</journal>
+    <volume>5</volume>
+    <issue>3</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-C-44</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2000</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>431/1470</doi>
+    <date> 01/02/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-44</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2010</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1963/437</doi>
+    <date> 26/09/2021 </date>
+    <book>book-j</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-45</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2019</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>163/1536</doi>
+    <date> 21/08/2021 </date>
+    <journal>journal-t</journal>
+    <volume>2</volume>
+    <issue>9</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-45</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2003</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1361/667</doi>
+    <date> 20/10/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-45</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2017</pubyear>
+    <publisher>Springer</publisher>
+    <doi>473/1747</doi>
+    <date> 08/11/2021 </date>
+    <book>book-f</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-F-46</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2018</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1531/837</doi>
+    <date> 12/04/2021 </date>
+    <journal>journal-p</journal>
+    <volume>4</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-46</title>
+    <authors>Jason Adair</authors>
+    <pubyear>1999</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>926/155</doi>
+    <date> 21/09/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-46</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2014</pubyear>
+    <publisher>ACM</publisher>
+    <doi>303/501</doi>
+    <date> 18/05/2021 </date>
+    <book>book-h</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-47</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2017</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1097/1912</doi>
+    <date> 04/04/2021 </date>
+    <journal>journal-t</journal>
+    <volume>8</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-47</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Springer</publisher>
+    <doi>222/602</doi>
+    <date> 06/09/2021 </date>
+    <venue>Conference-1</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-C-47</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2014</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1878/1418</doi>
+    <date> 07/02/2021 </date>
+    <book>book-h</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-48</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2015</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>639/1918</doi>
+    <date> 25/03/2021 </date>
+    <journal>journal-s</journal>
+    <volume>1</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-G-48</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2018</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1625/1463</doi>
+    <date> 08/01/2021 </date>
+    <venue>Conference-1</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-48</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>1999</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1717/746</doi>
+    <date> 29/08/2021 </date>
+    <book>book-j</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-49</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Springer</publisher>
+    <doi>331/3</doi>
+    <date> 22/04/2021 </date>
+    <journal>journal-t</journal>
+    <volume>3</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-49</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2001</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>105/1463</doi>
+    <date> 26/05/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-49</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>1999</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1642/797</doi>
+    <date> 08/05/2021 </date>
+    <book>book-h</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-E-50</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2014</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1319/794</doi>
+    <date> 11/03/2021 </date>
+    <journal>journal-x</journal>
+    <volume>7</volume>
+    <issue>2</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-F-50</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2019</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>586/514</doi>
+    <date> 14/06/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-50</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2016</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>516/849</doi>
+    <date> 04/08/2021 </date>
+    <book>book-g</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-B-51</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1442/1381</doi>
+    <date> 24/02/2021 </date>
+    <journal>journal-x</journal>
+    <volume>5</volume>
+    <issue>9</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-51</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2002</pubyear>
+    <publisher>Springer</publisher>
+    <doi>378/1183</doi>
+    <date> 09/02/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-51</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2008</pubyear>
+    <publisher>Springer</publisher>
+    <doi>988/1027</doi>
+    <date> 07/01/2021 </date>
+    <book>book-s</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-C-52</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2010</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1832/1146</doi>
+    <date> 28/08/2021 </date>
+    <journal>journal-z</journal>
+    <volume>7</volume>
+    <issue>5</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-C-52</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2005</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>984/1043</doi>
+    <date> 04/06/2021 </date>
+    <venue>Conference-2</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-C-52</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2005</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1880/1715</doi>
+    <date> 19/01/2021 </date>
+    <book>book-h</book>
+    <editor>Micky Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-53</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2016</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>872/1260</doi>
+    <date> 19/03/2021 </date>
+    <journal>journal-x</journal>
+    <volume>7</volume>
+    <issue>4</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-53</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2009</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1811/1036</doi>
+    <date> 12/06/2021 </date>
+    <venue>Conference-3</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-53</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2007</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1403/371</doi>
+    <date> 16/02/2021 </date>
+    <book>book-f</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-C-54</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2010</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1025/562</doi>
+    <date> 09/01/2021 </date>
+    <journal>journal-t</journal>
+    <volume>5</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-F-54</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2014</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1924/49</doi>
+    <date> 27/06/2021 </date>
+    <venue>Conference-1</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-54</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2001</pubyear>
+    <publisher>ACM</publisher>
+    <doi>697/929</doi>
+    <date> 09/04/2021 </date>
+    <book>book-h</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-55</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2006</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1043/1976</doi>
+    <date> 27/10/2021 </date>
+    <journal>journal-x</journal>
+    <volume>7</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-B-55</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2019</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>611/180</doi>
+    <date> 22/08/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-T</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-55</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2008</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1597/1774</doi>
+    <date> 03/07/2021 </date>
+    <book>book-s</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-B-56</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2007</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1920/730</doi>
+    <date> 18/04/2021 </date>
+    <journal>journal-s</journal>
+    <volume>3</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-56</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2008</pubyear>
+    <publisher>Springer</publisher>
+    <doi>383/412</doi>
+    <date> 01/06/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-B-56</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2008</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1810/230</doi>
+    <date> 08/03/2021 </date>
+    <book>book-l</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-57</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Springer</publisher>
+    <doi>442/1481</doi>
+    <date> 26/04/2021 </date>
+    <journal>journal-t</journal>
+    <volume>3</volume>
+    <issue>5</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-57</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2014</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1962/454</doi>
+    <date> 01/11/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-C-57</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2007</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>284/632</doi>
+    <date> 24/02/2021 </date>
+    <book>book-a</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-F-58</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>1999</pubyear>
+    <publisher>ACM</publisher>
+    <doi>605/1231</doi>
+    <date> 23/09/2021 </date>
+    <journal>journal-s</journal>
+    <volume>8</volume>
+    <issue>9</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-D-58</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2012</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>920/1804</doi>
+    <date> 27/01/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-58</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2002</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1438/1638</doi>
+    <date> 06/08/2021 </date>
+    <book>book-j</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-59</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2000</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1170/1017</doi>
+    <date> 28/08/2021 </date>
+    <journal>journal-p</journal>
+    <volume>3</volume>
+    <issue>2</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-D-59</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2019</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1637/564</doi>
+    <date> 27/10/2021 </date>
+    <venue>Conference-1</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-59</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2013</pubyear>
+    <publisher>ACM</publisher>
+    <doi>311/1008</doi>
+    <date> 09/05/2021 </date>
+    <book>book-s</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-60</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2001</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>704/457</doi>
+    <date> 02/11/2021 </date>
+    <journal>journal-t</journal>
+    <volume>8</volume>
+    <issue>9</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-60</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2013</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1894/1524</doi>
+    <date> 04/06/2021 </date>
+    <venue>Conference-5</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-60</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2009</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>814/723</doi>
+    <date> 29/08/2021 </date>
+    <book>book-j</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-61</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2016</pubyear>
+    <publisher>ACM</publisher>
+    <doi>495/1076</doi>
+    <date> 22/03/2021 </date>
+    <journal>journal-t</journal>
+    <volume>4</volume>
+    <issue>5</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-B-61</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2000</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1804/1168</doi>
+    <date> 12/03/2021 </date>
+    <venue>Conference-1</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-61</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2008</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1407/1775</doi>
+    <date> 11/06/2021 </date>
+    <book>book-s</book>
+    <editor>Micky Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-62</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2001</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1092/72</doi>
+    <date> 28/04/2021 </date>
+    <journal>journal-z</journal>
+    <volume>4</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-62</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2017</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>834/554</doi>
+    <date> 26/11/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-62</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2007</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1142/1000</doi>
+    <date> 26/06/2021 </date>
+    <book>book-g</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-63</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1178/1384</doi>
+    <date> 28/09/2021 </date>
+    <journal>journal-x</journal>
+    <volume>8</volume>
+    <issue>9</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-C-63</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2015</pubyear>
+    <publisher></publisher>
+    <doi>1491/665</doi>
+    <date> 11/02/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-T</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-63</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2005</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1942/1436</doi>
+    <date> 25/06/2021 </date>
+    <book>book-s</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-64</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2000</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>821/245</doi>
+    <date> 26/02/2021 </date>
+    <journal>journal-s</journal>
+    <volume>3</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-64</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2000</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1234/1692</doi>
+    <date> 22/06/2021 </date>
+    <venue>Conference-5</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-64</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2003</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>869/1661</doi>
+    <date> 17/02/2021 </date>
+    <book>book-g</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-65</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2004</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1651/1797</doi>
+    <date> 15/01/2021 </date>
+    <journal>journal-p</journal>
+    <volume>6</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-C-65</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2007</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>84/1550</doi>
+    <date> 19/03/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-65</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2009</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1067/1119</doi>
+    <date> 16/01/2021 </date>
+    <book>book-l</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-66</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2001</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>568/1452</doi>
+    <date> 21/05/2021 </date>
+    <journal>journal-q</journal>
+    <volume>8</volume>
+    <issue>9</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-G-66</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1115/448</doi>
+    <date> 11/10/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-66</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2015</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1015/900</doi>
+    <date> 21/07/2021 </date>
+    <book>book-g</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-67</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2010</pubyear>
+    <publisher>ACM</publisher>
+    <doi>602/1845</doi>
+    <date> 22/04/2021 </date>
+    <journal>journal-q</journal>
+    <volume>6</volume>
+    <issue>5</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-67</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2016</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1199/825</doi>
+    <date> 19/01/2021 </date>
+    <venue>Conference-3</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-67</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2000</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>486/167</doi>
+    <date> 10/06/2021 </date>
+    <book>book-f</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-68</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2012</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1919/1079</doi>
+    <date> 12/09/2021 </date>
+    <journal>journal-p</journal>
+    <volume>8</volume>
+    <issue>2</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-D-68</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2003</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1791/1990</doi>
+    <date> 22/01/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-68</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2019</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>424/965</doi>
+    <date> 04/03/2021 </date>
+    <book>book-k</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-F-69</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2018</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>305/1658</doi>
+    <date> 15/05/2021 </date>
+    <journal>journal-z</journal>
+    <volume>4</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-69</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2015</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1809/1975</doi>
+    <date> 21/01/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-69</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2016</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1823/1224</doi>
+    <date> 13/10/2021 </date>
+    <book>book-f</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-B-70</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2016</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1411/894</doi>
+    <date> 13/08/2021 </date>
+    <journal>journal-p</journal>
+    <volume>8</volume>
+    <issue>2</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-70</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2015</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>728/1019</doi>
+    <date> 20/01/2021 </date>
+    <venue>Conference-5</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-70</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2008</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1441/313</doi>
+    <date> 01/03/2021 </date>
+    <book>book-g</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-71</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2005</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1862/1457</doi>
+    <date> 24/06/2021 </date>
+    <journal>journal-s</journal>
+    <volume>8</volume>
+    <issue>9</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-B-71</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2009</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>905/905</doi>
+    <date> 19/06/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-71</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2013</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1894/1573</doi>
+    <date> 22/08/2021 </date>
+    <book>book-f</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-C-72</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2003</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>143/1861</doi>
+    <date> 04/05/2021 </date>
+    <journal>journal-p</journal>
+    <volume>8</volume>
+    <issue>3</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-72</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2017</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>266/1642</doi>
+    <date> 02/01/2021 </date>
+    <venue>Conference-5</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-C-72</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2004</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1938/1761</doi>
+    <date> 07/03/2021 </date>
+    <book>book-j</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-73</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2018</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1755/542</doi>
+    <date> 15/01/2021 </date>
+    <journal>journal-y</journal>
+    <volume>9</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-73</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2019</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1521/857</doi>
+    <date> 10/09/2021 </date>
+    <venue>Conference-1</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-73</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2005</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>889/829</doi>
+    <date> 18/05/2021 </date>
+    <book>book-k</book>
+    <editor></editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-C-74</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2009</pubyear>
+    <publisher>ACM</publisher>
+    <doi>251/781</doi>
+    <date> 28/10/2021 </date>
+    <journal>journal-q</journal>
+    <volume>6</volume>
+    <issue>3</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-74</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Springer</publisher>
+    <doi>905/994</doi>
+    <date> 14/08/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-74</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2013</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1263/1217</doi>
+    <date> 23/02/2021 </date>
+    <book>book-f</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-B-75</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2019</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1954/1902</doi>
+    <date> 29/07/2021 </date>
+    <journal>journal-t</journal>
+    <volume>5</volume>
+    <issue>2</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-75</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>588/1689</doi>
+    <date> 01/04/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-75</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2005</pubyear>
+    <publisher>Springer</publisher>
+    <doi>873/501</doi>
+    <date> 19/08/2021 </date>
+    <book>book-g</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-76</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1927/1140</doi>
+    <date> 28/02/2021 </date>
+    <journal>journal-p</journal>
+    <volume>7</volume>
+    <issue>4</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-76</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>1999</pubyear>
+    <publisher>ACM</publisher>
+    <doi>796/718</doi>
+    <date> 21/08/2021 </date>
+    <venue>Conference-3</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-E-76</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2017</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>197/1583</doi>
+    <date> 29/08/2021 </date>
+    <book>book-j</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-77</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2007</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1375/420</doi>
+    <date> 13/04/2021 </date>
+    <journal>journal-p</journal>
+    <volume>2</volume>
+    <issue>5</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-F-77</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2002</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1768/1709</doi>
+    <date> 20/10/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-C-77</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2006</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>883/1239</doi>
+    <date> 01/03/2021 </date>
+    <book>book-j</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-C-78</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2007</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1611/707</doi>
+    <date> 28/06/2021 </date>
+    <journal>journal-z</journal>
+    <volume>7</volume>
+    <issue>4</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-78</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2002</pubyear>
+    <publisher>ACM</publisher>
+    <doi>434/1456</doi>
+    <date> 21/06/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-78</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2004</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1159/527</doi>
+    <date> 23/08/2021 </date>
+    <book>book-j</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-79</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2012</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1539/1238</doi>
+    <date> 07/10/2021 </date>
+    <journal>journal-x</journal>
+    <volume>7</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-H-79</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2018</pubyear>
+    <publisher>Springer</publisher>
+    <doi>739/494</doi>
+    <date> 15/07/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-B-79</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2017</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1336/1136</doi>
+    <date> 02/10/2021 </date>
+    <book>book-k</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-B-80</title>
+    <authors>Jason Adair</authors>
+    <pubyear>1999</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>585/1782</doi>
+    <date> 15/04/2021 </date>
+    <journal>journal-y</journal>
+    <volume>8</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-C-80</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2019</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>164/1051</doi>
+    <date> 19/04/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-80</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2010</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1248/221</doi>
+    <date> 13/04/2021 </date>
+    <book>book-d</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-E-81</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1168/551</doi>
+    <date> 18/07/2021 </date>
+    <journal>journal-t</journal>
+    <volume>5</volume>
+    <issue>3</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-81</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2018</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1176/406</doi>
+    <date> 03/03/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-81</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2013</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>538/1521</doi>
+    <date> 27/08/2021 </date>
+    <book>book-h</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-82</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2011</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1696/593</doi>
+    <date> 27/07/2021 </date>
+    <journal>journal-t</journal>
+    <volume>9</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-B-82</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2017</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1088/1771</doi>
+    <date> 14/07/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-82</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2010</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1949/113</doi>
+    <date> 22/11/2021 </date>
+    <book>book-l</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-C-83</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2000</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1389/441</doi>
+    <date> 17/11/2021 </date>
+    <journal>journal-y</journal>
+    <volume>1</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-F-83</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2002</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1872/390</doi>
+    <date> 11/02/2021 </date>
+    <venue>Conference-3</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-83</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2008</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>416/485</doi>
+    <date> 06/03/2021 </date>
+    <book>book-l</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-E-84</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2016</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>385/1099</doi>
+    <date> 09/07/2021 </date>
+    <journal>journal-z</journal>
+    <volume>4</volume>
+    <issue>7</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-G-84</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2019</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1819/292</doi>
+    <date> 17/09/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-84</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2000</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1413/1824</doi>
+    <date> 11/03/2021 </date>
+    <book>book-h</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-85</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2012</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1982/763</doi>
+    <date> 20/02/2021 </date>
+    <journal>journal-p</journal>
+    <volume>6</volume>
+    <issue>3</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-G-85</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2011</pubyear>
+    <publisher>Springer</publisher>
+    <doi>811/875</doi>
+    <date> 01/02/2021 </date>
+    <venue>Conference-3</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-C-85</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2007</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>113/37</doi>
+    <date> 23/02/2021 </date>
+    <book>book-s</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-86</title>
+    <authors>Jason Adair</authors>
+    <pubyear>1999</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1850/88</doi>
+    <date> 14/09/2021 </date>
+    <journal>journal-t</journal>
+    <volume>1</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-B-86</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2014</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1215/415</doi>
+    <date> 19/02/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-86</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>1999</pubyear>
+    <publisher>ACM</publisher>
+    <doi>605/1963</doi>
+    <date> 06/05/2021 </date>
+    <book>book-j</book>
+    <editor>Micky Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-A-87</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2005</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>595/676</doi>
+    <date> 17/03/2021 </date>
+    <journal>journal-q</journal>
+    <volume>6</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-87</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2014</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1421/922</doi>
+    <date> 02/10/2021 </date>
+    <venue>Conference-8</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-87</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2001</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>649/586</doi>
+    <date> 22/06/2021 </date>
+    <book>book-s</book>
+    <editor>Ariel</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-88</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2004</pubyear>
+    <publisher>ACM</publisher>
+    <doi>291/1750</doi>
+    <date> 16/04/2021 </date>
+    <journal>journal-p</journal>
+    <volume>4</volume>
+    <issue>3</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-G-88</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2019</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1018/510</doi>
+    <date> 16/10/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-T</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-88</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2000</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>229/1461</doi>
+    <date> 19/11/2021 </date>
+    <book>book-k</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-F-89</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2003</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>166/1052</doi>
+    <date> 08/03/2021 </date>
+    <journal>journal-q</journal>
+    <volume>4</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-F-89</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2006</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>462/647</doi>
+    <date> 28/09/2021 </date>
+    <venue>Conference-7</venue>
+    <location>Location-O</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-89</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1549/631</doi>
+    <date> 14/10/2021 </date>
+    <book>book-l</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-E-90</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2018</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1704/29</doi>
+    <date> 26/11/2021 </date>
+    <journal>journal-t</journal>
+    <volume>9</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-90</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1968/996</doi>
+    <date> 27/02/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-R</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-90</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2016</pubyear>
+    <publisher>Springer</publisher>
+    <doi>554/1524</doi>
+    <date> 19/10/2021 </date>
+    <book>book-l</book>
+    <editor>Elsa</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-E-91</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>1999</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1379/152</doi>
+    <date> 27/11/2021 </date>
+    <journal>journal-y</journal>
+    <volume>8</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-B-91</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2011</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>683/392</doi>
+    <date> 14/03/2021 </date>
+    <venue>Conference-1</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-91</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2003</pubyear>
+    <publisher>ACM</publisher>
+    <doi>782/63</doi>
+    <date> 12/04/2021 </date>
+    <book>book-h</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-F-92</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2003</pubyear>
+    <publisher>Springer</publisher>
+    <doi>456/1076</doi>
+    <date> 12/02/2021 </date>
+    <journal>journal-z</journal>
+    <volume>9</volume>
+    <issue>3</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-92</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2006</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1540/1164</doi>
+    <date> 01/10/2021 </date>
+    <venue>Conference-1</venue>
+    <location>Location-U</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-B-92</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2010</pubyear>
+    <publisher>Springer</publisher>
+    <doi>547/561</doi>
+    <date> 12/06/2021 </date>
+    <book>book-h</book>
+    <editor>Micky Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-93</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2018</pubyear>
+    <publisher>Springer</publisher>
+    <doi>117/659</doi>
+    <date> 14/01/2021 </date>
+    <journal>journal-q</journal>
+    <volume>2</volume>
+    <issue>1</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-E-93</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2016</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1111/1710</doi>
+    <date> 23/05/2021 </date>
+    <venue>Conference-2</venue>
+    <location>Location-T</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-D-93</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2002</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>593/1504</doi>
+    <date> 14/06/2021 </date>
+    <book>book-l</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-94</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2002</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1545/1287</doi>
+    <date> 15/06/2021 </date>
+    <journal>journal-y</journal>
+    <volume>4</volume>
+    <issue>3</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-94</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2016</pubyear>
+    <publisher>ACM</publisher>
+    <doi>271/86</doi>
+    <date> 12/04/2021 </date>
+    <venue>Conference-3</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-B-94</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2013</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1285/1098</doi>
+    <date> 10/04/2021 </date>
+    <book>book-h</book>
+    <editor>Donald Duck</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-H-95</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2006</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1580/838</doi>
+    <date> 15/02/2021 </date>
+    <journal>journal-s</journal>
+    <volume>3</volume>
+    <issue>2</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-G-95</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Springer</publisher>
+    <doi>240/1348</doi>
+    <date> 22/03/2021 </date>
+    <venue>Conference-6</venue>
+    <location>Location-I</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-A-95</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2017</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>1011/141</doi>
+    <date> 03/07/2021 </date>
+    <book>book-f</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-B-96</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2010</pubyear>
+    <publisher>ACM</publisher>
+    <doi>1241/866</doi>
+    <date> 17/07/2021 </date>
+    <journal>journal-z</journal>
+    <volume>4</volume>
+    <issue>9</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-G-96</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2013</pubyear>
+    <publisher>Springer</publisher>
+    <doi>1223/505</doi>
+    <date> 16/07/2021 </date>
+    <venue>Conference-5</venue>
+    <location>Location-Y</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-B-96</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>1999</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1083/615</doi>
+    <date> 28/10/2021 </date>
+    <book>book-k</book>
+    <editor>Micky Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-97</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2020</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1456/888</doi>
+    <date> 24/04/2021 </date>
+    <journal>journal-q</journal>
+    <volume>5</volume>
+    <issue>6</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-D-97</title>
+    <authors>Saemi Haraldsson</authors>
+    <pubyear>2017</pubyear>
+    <publisher>ACM</publisher>
+    <doi>118/1472</doi>
+    <date> 01/06/2021 </date>
+    <venue>Conference-5</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-F-97</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2000</pubyear>
+    <publisher>IEEE</publisher>
+    <doi>12/1513</doi>
+    <date> 07/07/2021 </date>
+    <book>book-d</book>
+    <editor>Guffy</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-D-98</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2006</pubyear>
+    <publisher>ACM</publisher>
+    <doi></doi>
+    <date> 13/06/2021 </date>
+    <journal>journal-t</journal>
+    <volume>9</volume>
+    <issue>8</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-A-98</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2000</pubyear>
+    <publisher>Springer</publisher>
+    <doi>935/1309</doi>
+    <date> 26/07/2021 </date>
+    <venue>Conference-4</venue>
+    <location>Location-T</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-G-98</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2005</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1841/786</doi>
+    <date> 04/01/2021 </date>
+    <book>book-h</book>
+    <editor>Mina Mouse</editor>
+  </ref>
+
+  <ref type="RefJournal">
+    <title>Title-G-99</title>
+    <authors>Kevin Bacon</authors>
+    <pubyear>2018</pubyear>
+    <publisher></publisher>
+    <doi>613/453</doi>
+    <date> 08/06/2021 </date>
+    <journal>journal-p</journal>
+    <volume>4</volume>
+    <issue>3</issue>
+  </ref>
+
+  <ref type="RefConference">
+    <title>Title-D-99</title>
+    <authors>Heidi Brynjolfsdottir</authors>
+    <pubyear>2003</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1839/1726</doi>
+    <date> 06/08/2021 </date>
+    <venue>Conference-2</venue>
+    <location>Location-P</location>
+  </ref>
+
+  <ref type="RefBookChapter">
+    <title>Title-H-99</title>
+    <authors>Jason Adair</authors>
+    <pubyear>2005</pubyear>
+    <publisher>Elsevier</publisher>
+    <doi>1795/606</doi>
+    <date> 29/10/2021 </date>
+    <book>book-g</book>
+    <editor>Ariel</editor>
+  </ref>
+
+</bibliography>

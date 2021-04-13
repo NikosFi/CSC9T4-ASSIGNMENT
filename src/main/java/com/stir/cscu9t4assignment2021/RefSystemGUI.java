@@ -102,7 +102,7 @@ public class RefSystemGUI extends JFrame {
     BottomPanel btp = new BottomPanel();
     MenuTopBarPanel mtbp = new MenuTopBarPanel();
     FunctionalityPanel fnp = new FunctionalityPanel();
-
+    TextAreaPanel txtAreaPanel = new TextAreaPanel();
     //main
     public static void main(String[] args) {
         RefSystemGUI applic = new RefSystemGUI();
@@ -114,28 +114,23 @@ public class RefSystemGUI extends JFrame {
         super("Bibliography");
 
         Border blackline = BorderFactory.createLineBorder(Color.black);
-        TextAreaPanel txtAreaPanel = new TextAreaPanel();
 
 
-        // dbTable second half of central panel
         JTable dbTable = new JTable();
-        dbTable.setSize(new Dimension(500, 500));
-        final Object[] JOURNAL_HEADER = {"Title", "Authors", "DOI", "Publisher", "PubYear", "Journal", "Volume", "Issue", "Date Added"};
-        final Object[][] JOURNAL_ENTRIES = {{"title", new String[]{"ASDF"}, "DSAF", "String", 231, "ADSF", 213, 123},
-                {"title", new String[]{"ASDF"}, "DSAF", "String", 231, "ADSF", 213, 123}};
-
-        DefaultTableModel tableModel = new DefaultTableModel(JOURNAL_ENTRIES, JOURNAL_HEADER) {
+        // dbTable second half of central panel
+        Object[] columns = new Object[]{"Title", "Authors", "DOI", "Publisher", "Year", "Date","Journal", "Issue", "Volume", "Venue", "Location","Book","Editor"};
+        DefaultTableModel tableModel = new DefaultTableModel() {
             @Override
             public boolean isCellEditable(int row, int column) {
                 //all cells false
                 return false;
             }
         };
-
+        tableModel.setColumnIdentifiers(columns);
         dbTable.setModel(tableModel);
-        tableModel.addRow(new Object[]{"Column 2", "Column 3"});
-        tableModel.addRow(new Object[]{});
-        tableModel.setNumRows(15);
+        dbTable.setSize(new Dimension(500, 500));
+
+
         dbTable.getTableHeader().setBackground(Color.LIGHT_GRAY);
         dbTable.getTableHeader().setReorderingAllowed(false); // MAKE COLUMNS NOT ABLE TO MOVE
 
@@ -199,13 +194,17 @@ public class RefSystemGUI extends JFrame {
             myPanel.add(textArea);
             myPanel.setLayout(null);
             UIManager.put("OptionPane.minimumSize", new Dimension(400, 400));
-            JOptionPane.showConfirmDialog(null, myPanel,
+            int op  =JOptionPane.showConfirmDialog(null, myPanel,
                     "Add Authors ",
                     JOptionPane.OK_CANCEL_OPTION,
                     JOptionPane.PLAIN_MESSAGE);
 
-            if(JOptionPane.OK_OPTION == 0) {
+            if(op == JOptionPane.OK_OPTION ) {
                 authors.setText((String.join(";",authHolderArray)));
+            }
+            else{
+                authors.setText("");
+                authHolderArray.removeAll(authHolderArray);
             }
         });
         // edit Authors end
@@ -335,7 +334,26 @@ public class RefSystemGUI extends JFrame {
 
             }
         });
+
+
         submitSearchBtn.addActionListener(e -> {
+            for(Ref ref : bibliography.allEntries()){
+                if(ref instanceof RefJournal){
+                    tableModel.addRow(new Object[]{ref.getTitle(),String.join(",",ref.getAuthors()),ref.getPubyear(),ref.getPublisher(),ref.getDoi(),ref.getDateAdded(),
+                            ((RefJournal) ref).getJournal(),((RefJournal) ref).getVolume(),((RefJournal) ref).getIssue(),null,null,null,null});
+
+                }
+                if(ref instanceof RefConference) {
+                    tableModel.addRow(new Object[]{ref.getTitle(), String.join(",", ref.getAuthors()), ref.getPubyear(), ref.getPublisher(), ref.getDoi(), ref.getDateAdded(),
+                            null, null, null, ((RefConference) ref).getVenue(), ((RefConference) ref).getLocation(), null, null});
+                }
+                if(ref instanceof RefBookChapter) {
+                    tableModel.addRow(new Object[]{ref.getTitle(), String.join(",", ref.getAuthors()), ref.getPubyear(), ref.getPublisher(), ref.getDoi(), ref.getDateAdded(),
+                            null, null, null, null, null, ((RefBookChapter) ref).getBook(),((RefBookChapter) ref).getEditor()});
+                }
+            }
+
+
             switch (findAll.getSelectedIndex()) {
                 case 0:
                     txtAreaPanel.setText(bibliography.lookUpByJournal(searchField.getText()));
@@ -386,23 +404,41 @@ public class RefSystemGUI extends JFrame {
             File[] f = fd.getFiles();
             if (f.length > 0) {
                 try {
-                    txtAreaPanel.setText(bibliography.importMany(((fd.getFiles()[0].getAbsolutePath()))));
+                    bibliography.setFilePath(fd.getFiles()[0].getAbsolutePath());
+                    bibliography.importMany();
+                    displayMessage();
                 } catch (IOException ioException) {
                     ioException.printStackTrace();
                 }
             }
+
+
         });
 
 
         exportText.addActionListener(e -> {
+            JOptionPane.showMessageDialog(new JFrame(), "Navigate to the directory that you want to create your exported file. \n" +
+                    "ATTENTION : After naming the file you should type in the end of the name \".txt\"\n" +
+                    "E.g ---> \"export\" produces incorrect file but ----> \"export.txt\" correct");
+            FileDialog fd = new FileDialog(new JFrame(),"Save",FileDialog.SAVE);
+            fd.setVisible(true);
+            String path = fd.getDirectory() + fd.getFile();
+
+            //fix only to get text from search option
             if(!txtAreaPanel.getText().isEmpty()) {
-                txtAreaPanel.setText(bibliography.exportToText(txtAreaPanel.getText()));
+                txtAreaPanel.setText(bibliography.exportToText(txtAreaPanel.getText(),path));
             }
         });
 
         exportXml.addActionListener(e -> {
-            if(!txtAreaPanel.getText().isEmpty()){
-                txtAreaPanel.setText(bibliography.exportXML());
+            JOptionPane.showMessageDialog(new JFrame(), "Navigate to the directory that you want to create your exported file. \n" +
+                    "ATTENTION : After naming the file you should type in the end of the name \".xml\"\n" +
+                    "E.g ---> \"export\" produces incorrect file but ----> \"export.xml\" correct");
+            FileDialog fd = new FileDialog(new JFrame(),"Save",FileDialog.SAVE);
+            fd.setVisible(true);
+            String path = fd.getDirectory() + fd.getFile();
+            if(!txtAreaPanel.getText().isEmpty() ){
+                txtAreaPanel.setText(bibliography.exportXML(path));
             }
         });
 
@@ -432,9 +468,19 @@ public class RefSystemGUI extends JFrame {
         System.out.println("Adding " + what + " citation to the Bibliography");
 
         // global attribute declaration
-        String t = title.getText();
-        String[] a = authors.getText().split(";");// need to pass elements from JOptionPane;
+        String t= title.getText();
+        if(t.isBlank()){
+            return message = "The title cannot be blank. Please fill the Title field with an appropriate title";
+        }
+        String[] a = authors.getText().split(";");
+        if(a.length < 1 || a[0].isBlank()){
+            return message = "The authors cannot be blank. Please fill the Authors field with the authors of the citation";
+        }
+
         String d = doi.getText();
+        if(d.isBlank()) {
+            return message = "The doi cannot be blank. Please fill the Doi field with an appropriate doi";
+        }
         String p = publisher.getText();
 
 
@@ -469,32 +515,65 @@ public class RefSystemGUI extends JFrame {
                     "Please check the date fields and try again.";
         }
 
-
-        int py = Integer.parseInt(pubYear.getText());
-
+        int py;
+        try {
+             py = Integer.parseInt(pubYear.getText());
+        }
+        catch (NumberFormatException numberFormatException) {
+            return message = "The year should contain only numerical values and it cannot be blank.";
+        }
         switch (typeList.getSelectedIndex()) {
             case 0:
                 String jn = journalName.getText();
-                int i = Integer.parseInt(issue.getText());
-                int v = Integer.parseInt(volume.getText());
+                if(jn.isBlank()) {
+                    return message = "The Journal name cannot be blank. Please fill the JournalName field with the journal name of your citation";
+                }
+                int i,v;
+                try {
+                    i = Integer.parseInt(issue.getText());
+                    v = Integer.parseInt(volume.getText());
+                } catch (NumberFormatException nfe) {
+                    return message = "The volume and issue field can contain only numerical values. Please try again";
+                }
                 RefJournal refJournal = new RefJournal(t, a, py, p, d, dayAdded, monthAdded, yearAdded, jn, i, v);
                 bibliography.addCite(refJournal); //after beta implement with generics
                 break;
             case 1:
                 String cf = conference.getText();
+                if(cf.isBlank()) {
+                    return message = "The Conference name cannot be blank. Please fill the Conference Name field with the conference name of your citation.";
+                }
                 String l = location.getText();
+                if(l.isBlank()) {
+                    return message = "The Location of a Conference cannot be blank. Please fill the Location field with the location of your citation.";
+                }
                 RefConference refConference = new RefConference(t, a, py, p, d, dayAdded, monthAdded, yearAdded, cf, l);
                 bibliography.addCite(refConference);
                 break;
             case 2:
                 String bk = bookTitle.getText();
+                if(bk.isBlank()) {
+                    return message = "The Book Chapter cannot be blank. Please fill the Book Chapter field with the book chapter of your citation.";
+                }
                 String e = editor.getText();
                 RefBookChapter refBK = new RefBookChapter(t, a, py, p, d, dayAdded, monthAdded, yearAdded, bk, e);
                 bibliography.addCite(refBK);
                 break;
         }
+
+        a = new String[]{};
         return message;
     }
+
+    private String receiveMessageFromCollection() {
+        return bibliography.getMessage();
+    }
+
+    private void displayMessage() {
+        txtAreaPanel.setText(receiveMessageFromCollection());
+    }
+
+
 
 //    public boolean validateDate(String date) {
 //        try {

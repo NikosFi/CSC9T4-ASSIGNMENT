@@ -1,12 +1,14 @@
 package com.stir.cscu9t4assignment2021;
 
+import javax.swing.table.DefaultTableModel;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Date;
 
-public class Ref {
+public class Ref  {
 
 
     private String title;
@@ -15,8 +17,10 @@ public class Ref {
     private String publisher;
     private int pubyear;
 
-    private Date dateAdded;
+    private String dateAdded;
     private DateTimeFormatter df;
+
+
 
 
     public Ref(String title, String[] authors,int pubyear, String publisher, String doi) {
@@ -27,28 +31,34 @@ public class Ref {
         this.pubyear = pubyear;
     }
 
-    //12122012
+
 
 
     public Ref(String title, String[] authors,int pubyear, String publisher, String doi, int day, int month, int year) {
         this.title = title;
         this.authors = authors;
-        this.doi = doi;
-        this.publisher = publisher;
         this.pubyear = pubyear;
 
+        if(doi.isEmpty()) {
+            this.doi = "N/A";
+        }else {
+            this.doi = doi;
+        }
+
+        if(publisher.isEmpty()) {
+            this.publisher = "N/A";
+        }else {
+            this.publisher = publisher;
+        }
 
         if (day == 0 && month == 0 && year == 0) {
-            dateAdded = new Date();
+            this.dateAdded = "";
         } else {
-            dateAdded = new Date(year - 1900, month - 1, day);
+            dateAdded = year + "-" + month + "-" + day;
             //find what to use for dd/mm/year
         }
 
     }
-
-    public Ref(String... args){ // ---->
-    };
 
     public String getDoi() {
         return doi;
@@ -75,11 +85,16 @@ public class Ref {
     }
 
 
-    public String getDateAdded() {
+    public String getDateAdded()  {
+        SimpleDateFormat sdf = new SimpleDateFormat("uuuu-M-d");
+        Date currentDate ;
+        if (dateAdded.isEmpty()) {
+            currentDate= new Date();
+            return sdf.format(currentDate);
+        } else {
+            return dateAdded;
+        }
 
-        SimpleDateFormat sdf = new SimpleDateFormat(" dd/MM/yyyy ");
-
-        return sdf.format(dateAdded);
 
 
     }

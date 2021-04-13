@@ -1,6 +1,6 @@
 title,authors,year,publisher,doi,date,journal,volume,issue,venue,location,bookTitle,editor
-Title-B-0,Jason Adair,2015,ACM,533/49,6/2/2021,journal-s,9,8,,,,
-Title-A-0,Heidi Brynjolfsdottir,1999,ACM,765/1773,23/3/2021,,,,Conference-3,Location-U,,
+Title-B-0,Jason Adair,asdf,ACM,533/49,,journal-s,9,8,,,,
+Title-A-0,Heidi Brynjolfsdottir,1999,ACM,765/1773,29/2/2021,,,,Conference-3,Location-U,,
 Title-D-0,Jason Adair,2006,ACM,202/1031,8/5/2021,,,,,,book-a,Mina Mouse
 Title-G-1,Kevin Bacon,2007,IEEE,580/491,13/2/2021,journal-x,5,5,,,,
 Title-C-1,Kevin Bacon,2019,Springer,611/1124,23/11/2021,,,,Conference-2,Location-R,,
@@ -293,7 +293,7 @@ Title-B-96,Kevin Bacon,1999,Elsevier,1083/615,28/10/2021,,,,,,book-k,Micky Mouse
 Title-D-97,Saemi Haraldsson,2020,Elsevier,1456/888,24/4/2021,journal-q,5,6,,,,
 Title-D-97,Saemi Haraldsson,2017,ACM,118/1472,1/6/2021,,,,Conference-5,Location-P,,
 Title-F-97,Kevin Bacon,2000,IEEE,12/1513,7/7/2021,,,,,,book-d,Guffy
-Title-D-98,Jason Adair,2006,ACM,,13/6/2021,journal-t,9,8,,,,
+Title-D-98,Jason Adair,2006,ACM,,13/6/20215,journal-t,9,8,,,,
 Title-A-98,Kevin Bacon,2000,Springer,935/1309,26/7/2021,,,,Conference-4,Location-T,,
 Title-G-98,Jason Adair,2005,Elsevier,1841/786,4/1/2021,,,,,,book-h,Mina Mouse
 Title-G-99,Kevin Bacon,2018,,613/453,8/6/2021,journal-p,4,3,,,,

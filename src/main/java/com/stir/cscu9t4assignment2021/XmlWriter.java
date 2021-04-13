@@ -18,6 +18,8 @@ public class XmlWriter {
     private DocumentBuilder build;
     private Document doc;
 
+    private String path;
+
     public void writeXmlFile(List<Ref> list) {
 
         try {
@@ -28,8 +30,6 @@ public class XmlWriter {
 
             Element root = doc.createElement("bibliography");
             doc.appendChild(root);
-
-
 
 
             for (Ref ref : list) {
@@ -96,7 +96,7 @@ public class XmlWriter {
             DOMSource source = new DOMSource(doc);
             try {
                 // location and name of XML file you can change as per need
-                FileWriter fos = new FileWriter("./ros.xml");
+                FileWriter fos = new FileWriter(getXmlPath());
                 StreamResult result = new StreamResult(fos);
                 aTransformer.transform(source, result);
 
@@ -141,4 +141,14 @@ public class XmlWriter {
         dateAdded.appendChild(doc.createTextNode(String.valueOf(ref.getDateAdded())));
         cors.appendChild(dateAdded);
     }
+
+    public String getXmlPath(){
+        return path;
+    }
+
+    public void setXmlPath(String path){
+        this.path = path;
+    }
+
+
 }

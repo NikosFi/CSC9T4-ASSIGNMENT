@@ -10,7 +10,7 @@ public class RefJournal extends Ref {
     private int volume;
     private int issue;
 
-    private Date dateAdded;
+    private String dateAdded;
 
     public RefJournal(String title, String[] authors,int pubyear, String publisher, String doi,String journal, int volume, int issue) {
         super(title, authors,pubyear, publisher, doi);
@@ -24,11 +24,9 @@ public class RefJournal extends Ref {
         this.journal = journal;
         this.volume = volume;
         this.issue = issue;
-
-       this.dateAdded = (new Date(year-1900,month-1,day));
-
-
     }
+
+
 
     public String getJournal(){
         return journal;
@@ -44,8 +42,9 @@ public class RefJournal extends Ref {
 
     @Override
     public String getCitation() {
-        String result =  Arrays.toString(getAuthors()) + ", (" + getPubyear() + "). "  + getTitle()  +  ". " +
-                getJournal() + ", " + getVolume() + "(" + getIssue() + "), " + getPublisher() + ". "+ getDateAdded();
+        String result =  String.join(",  ",getAuthors()) + ", "  + "\"" + getTitle() + ",\" " +
+                getJournal() + ", vol." + getVolume() + ", no." + getIssue() + ", \n" + getPublisher() + ", " + getPubyear() + ". doi:"
+                + getDoi() + ", " + getDateAdded() + "\n";
         return result;
     }
 

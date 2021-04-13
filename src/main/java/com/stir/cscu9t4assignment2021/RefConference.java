@@ -35,8 +35,9 @@ public class RefConference extends Ref {
 
     @Override
     public String getCitation() {
-        String result =Arrays.toString(getAuthors()) + ", (" + getPubyear() + "). "  + getTitle()  +  ". " +
-                 "), " + getPublisher() + ". "+ getDateAdded();
+        String result = String.join(",  ",getAuthors()) + ", "  + "\"" + getTitle() + ",\" " +
+               getVenue() + ", " + getLocation() + ", \n" + getPublisher() + ", " + getPubyear() + ". doi:"
+                + getDoi() + ", " + getDateAdded() + "\n";
         return result;
     }
 }

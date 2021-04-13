@@ -14,7 +14,12 @@ public class RefBookChapter extends Ref {
     public RefBookChapter(String title, String[] authors,int pubyear, String publisher, String doi, int day, int month, int year, String book, String editor) {
         super(title, authors,pubyear, publisher, doi, day, month, year);
         this.book = book;
-        this.editor = editor;
+
+        if(editor.isEmpty()) {
+            this.editor = "N/A";
+        }else {
+            this.editor = editor;
+        }
     }
 
     public String getBook() {
@@ -27,6 +32,9 @@ public class RefBookChapter extends Ref {
 
     @Override
     public String getCitation() {
-        return super.getCitation();
+        String result = String.join(",  ",getAuthors()) + ", "  + "\"" + getTitle() + ",\" " +
+                getBook() + ", " + getEditor() + ", \n" + getPublisher() + ", " + getPubyear() + ". doi:"
+                + getDoi() + ", " + getDateAdded() + "\n";
+        return result;
     }
 }
